@@ -22,7 +22,7 @@
       {"chore": "Dust surfaces", "score": 3, "time_estimate": 20},
       {"chore": "Clean mirrors", "score": 2, "time_estimate": 8},
       {"chore": "Water plants", "score": 1, "time_estimate": 12},
-      {"chore": "Grocery shopping", "score": 5, "time_estimate": 75},
+      {"chore": "Grocery shopping", "score": 5, "time_estimate": 75, "dayofweek": "Monday"},
       {"chore": "Take trash to curb", "score": 1, "time_estimate": 5, "dayofweek": "Wednesday"},
       {"chore": "Check expired foods", "score": 3, "time_estimate": 15, "dayofweek": "Wednesday"},
       {"chore": "Meal planning", "score": 4, "time_estimate": 30, "dayofweek": "Sunday"},
