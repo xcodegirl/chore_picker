@@ -1,11 +1,15 @@
 # Chore Picker & Editor
 
-This project provides two Python GUI tools for managing and picking household chores from a JSON file.
+This project provides several tools for managing, picking, and scheduling household chores from a JSON file, including both GUI and command-line utilities.
 
 ## Files
 
 - `chore_picker.py`: Pick a random chore from a selected category or from all chores.
 - `chore_list_editor.py`: Add, edit, or delete chores in the JSON file using a user-friendly interface.
+- `generate_chore_schedule.py`: Generate a fair, balanced schedule for all people, assigning daily, weekly, and monthly chores.
+- `generate_chore_schedule_html.py`: Create a full, color-coded HTML table of the entire schedule for all people and days.
+- `generate_chore_day_person_html.py`: Generate an HTML page showing all chores assigned to a single person for a specific week and day.
+- `chore_day_person_view.html`: Web-based viewer for per-person, per-day schedule lookup.
 - `chore_data.json`: The data file containing all chores, organized by category.
 
 ## Requirements
