@@ -1,0 +1,279 @@
+{
+  "household_chores": {
+    "daily": [
+      {
+        "chore": "Make the bed",
+        "score": 1,
+        "time_estimate": 3
+      },
+      {
+        "chore": "Wash dishes",
+        "score": 2,
+        "time_estimate": 10
+      },
+      {
+        "chore": "Wipe kitchen counters",
+        "score": 1,
+        "time_estimate": 5
+      },
+      {
+        "chore": "Sweep/vacuum high-traffic areas",
+        "score": 2,
+        "time_estimate": 8
+      },
+      {
+        "chore": "Take out trash/recycling",
+        "score": 1,
+        "time_estimate": 3
+      },
+      {
+        "chore": "Clean stovetop after cooking",
+        "score": 2,
+        "time_estimate": 7
+      },
+      {
+        "chore": "Quick bathroom wipe-down",
+        "score": 2,
+        "time_estimate": 6
+      },
+      {
+        "chore": "Tidy living areas",
+        "score": 3,
+        "time_estimate": 12
+      },
+      {
+        "chore": "Laundry sorting",
+        "score": 1,
+        "time_estimate": 5
+      }
+    ],
+    "weekly": [
+      {
+        "chore": "Vacuum carpets",
+        "score": 4,
+        "time_estimate": 25
+      },
+      {
+        "chore": "Mop hard floors",
+        "score": 5,
+        "time_estimate": 30
+      },
+      {
+        "chore": "Clean toilets",
+        "score": 3,
+        "time_estimate": 15
+      },
+      {
+        "chore": "Scrub showers/bathtubs",
+        "score": 6,
+        "time_estimate": 35
+      },
+      {
+        "chore": "Change bed sheets",
+        "score": 2,
+        "time_estimate": 10
+      },
+      {
+        "chore": "Dust surfaces",
+        "score": 3,
+        "time_estimate": 20
+      },
+      {
+        "chore": "Clean mirrors",
+        "score": 2,
+        "time_estimate": 8
+      },
+      {
+        "chore": "Water plants",
+        "score": 1,
+        "time_estimate": 12
+      },
+      {
+        "chore": "Grocery shopping",
+        "score": 5,
+        "time_estimate": 75
+      },
+      {
+        "chore": "Take bins to curb",
+        "score": 1,
+        "time_estimate": 5
+      }
+    ],
+    "monthly": [
+      {
+        "chore": "Clean refrigerator interior",
+        "score": 6,
+        "time_estimate": 45
+      },
+      {
+        "chore": "Wipe down kitchen cabinets",
+        "score": 4,
+        "time_estimate": 30
+      },
+      {
+        "chore": "Clean oven/microwave",
+        "score": 7,
+        "time_estimate": 50
+      },
+      {
+        "chore": "Dust baseboards",
+        "score": 4,
+        "time_estimate": 25
+      },
+      {
+        "chore": "Wash windows",
+        "score": 5,
+        "time_estimate": 40
+      },
+      {
+        "chore": "Clean light fixtures",
+        "score": 3,
+        "time_estimate": 20
+      },
+      {
+        "chore": "Wipe down doors/handles",
+        "score": 2,
+        "time_estimate": 15
+      },
+      {
+        "chore": "Clean washing machine",
+        "score": 4,
+        "time_estimate": 30
+      },
+      {
+        "chore": "Clean dishwasher",
+        "score": 4,
+        "time_estimate": 25
+      },
+      {
+        "chore": "Vacuum upholstery",
+        "score": 3,
+        "time_estimate": 20
+      }
+    ],
+    "bi-yearly": [
+      {
+        "chore": "Wash curtains/drapes",
+        "score": 5,
+        "time_estimate": 60
+      },
+      {
+        "chore": "Deep clean carpets",
+        "score": 8,
+        "time_estimate": 120
+      },
+      {
+        "chore": "Clean mattress",
+        "score": 6,
+        "time_estimate": 45
+      },
+      {
+        "chore": "Wipe down walls",
+        "score": 7,
+        "time_estimate": 90
+      },
+      {
+        "chore": "Clean behind appliances",
+        "score": 7,
+        "time_estimate": 75
+      },
+      {
+        "chore": "Organize pantry",
+        "score": 5,
+        "time_estimate": 60
+      },
+      {
+        "chore": "Clean garage/shed",
+        "score": 9,
+        "time_estimate": 180
+      },
+      {
+        "chore": "Flip mattress",
+        "score": 4,
+        "time_estimate": 15
+      },
+      {
+        "chore": "Clean air vents",
+        "score": 6,
+        "time_estimate": 50
+      },
+      {
+        "chore": "Declutter storage areas",
+        "score": 8,
+        "time_estimate": 120
+      }
+    ],
+    "yearly": [
+      {
+        "chore": "Clean chimney",
+        "score": 10,
+        "time_estimate": 240
+      },
+      {
+        "chore": "Gutter cleaning",
+        "score": 9,
+        "time_estimate": 180
+      },
+      {
+        "chore": "Power wash house exterior",
+        "score": 8,
+        "time_estimate": 150
+      },
+      {
+        "chore": "Deep clean attic/basement",
+        "score": 9,
+        "time_estimate": 240
+      },
+      {
+        "chore": "Window screen cleaning",
+        "score": 5,
+        "time_estimate": 60
+      },
+      {
+        "chore": "Clean dryer vent",
+        "score": 7,
+        "time_estimate": 90
+      },
+      {
+        "chore": "Seal grout lines",
+        "score": 6,
+        "time_estimate": 120
+      },
+      {
+        "chore": "Wash exterior windows",
+        "score": 7,
+        "time_estimate": 150
+      },
+      {
+        "chore": "Organize important documents",
+        "score": 4,
+        "time_estimate": 60
+      },
+      {
+        "chore": "Service HVAC system",
+        "score": 8,
+        "time_estimate": 90
+      }
+    ]
+  },
+  "metadata": {
+    "valuation_rules": {
+      "daily": "Base $5 + (score \u00d7 1)",
+      "weekly": "Base $10 + (score \u00d7 2)",
+      "monthly": "Base $15 + (score \u00d7 3)",
+      "bi-yearly": "Base $20 + (score \u00d7 4)",
+      "yearly": "Base $25 + (score \u00d7 5)"
+    },
+    "time_units": "minutes",
+    "value_insights": {
+      "hourly_rates": {
+        "daily": "$32.10/hr",
+        "weekly": "$32.80/hr",
+        "monthly": "$38.70/hr",
+        "bi-yearly": "$46.00/hr",
+        "yearly": "$61.50/hr"
+      },
+      "value_time_correlation": 0.93
+    }
+  }
+}
