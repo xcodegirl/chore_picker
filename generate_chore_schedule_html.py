@@ -36,35 +36,9 @@ for ch in chore_data['household_chores'].get('monthly', []):
         required_monthly.add(ch['chore'])
 
 html = ['<html>', '<head><title>Chore Schedule</title>',
-        '<style>body{font-family:sans-serif;} table{border-collapse:collapse;margin:20px;} th,td{border:1px solid #aaa;padding:6px;} th{background:#eee;} .week-title{font-size:1.3em;margin-top:30px;} .required{color:#b00;font-weight:bold;} .chore-type{font-size:0.9em;color:#555;} .daily{color:#0057b7;} .weekly{color:#0077b7;} .monthly{color:#0097b7;}</style>',
+        '<style>body{font-family:sans-serif;} table{border-collapse:collapse;margin:20px;} th,td{border:1px solid #aaa;padding:6px;} th{background:#eee;} .week-title{font-size:1.3em;margin-top:30px;} .required{color:#b00;font-weight:bold;} .chore-type{font-size:0.9em;color:#555;} .daily{color:#0057b7;} .weekly{color:#2e8b57;} .monthly{color:#ff8800;}</style>',
         '</head>', '<body>']
 html.append('<h1>Monthly Chore Schedule</h1>')
-
-# Show required chores
-html.append('<h2>Required Daily Chores</h2>')
-if required_daily:
-    html.append('<ul>')
-    for c in sorted(required_daily):
-        html.append(f'<li class="required">{c} <span class="chore-type">(Daily)</span></li>')
-    html.append('</ul>')
-else:
-    html.append('<p>None</p>')
-html.append('<h2>Required Weekly Chores</h2>')
-if required_weekly:
-    html.append('<ul>')
-    for c in sorted(required_weekly):
-        html.append(f'<li class="required">{c} <span class="chore-type">(Weekly)</span></li>')
-    html.append('</ul>')
-else:
-    html.append('<p>None</p>')
-html.append('<h2>Required Monthly Chores</h2>')
-if required_monthly:
-    html.append('<ul>')
-    for c in sorted(required_monthly):
-        html.append(f'<li class="required">{c} <span class="chore-type">(Monthly)</span></li>')
-    html.append('</ul>')
-else:
-    html.append('<p>None</p>')
 
 for week, week_data in schedule.items():
     html.append(f'<div class="week-title">{week}</div>')
@@ -90,7 +64,7 @@ for week, week_data in schedule.items():
                         ctype_class = 'monthly'
                     if chore['chore'] in required_daily or chore['chore'] in required_weekly or chore['chore'] in required_monthly:
                         req = ' <span class="required">(*)</span>'
-                    desc += f"<li><b>{chore['chore']}</b>{req}<br><span class='chore-type {ctype_class}'>{ctype}</span><br>Score: {chore['score']}<br>Time: {chore['time_estimate']} min</li>"
+                    desc += f"<li><b>{chore['chore']}</b>{req}<br><span class='chore-type {ctype_class}'>{ctype} &ndash; {chore['time_estimate']} min</span></li>"
                 desc += '</ul>'
             else:
                 desc = ''
@@ -105,7 +79,7 @@ html.append('<tr><th>Person</th><th>Week</th><th>Total Score</th><th>Total Time<
 for person, pdata in summary.items():
     for week, wdata in pdata['weeks'].items():
         html.append(f'<tr><td>{person}</td><td>{week}</td><td>{wdata["score"]}</td><td>{min_to_hrmin(wdata["time"])}</td></tr>')
-    # Monthly total row
+    # Monthly total row (first 4 weeks)
     html.append(f'<tr style="font-weight:bold;"><td>{person}</td><td>Month</td><td>{pdata["month"]["score"]}</td><td>{min_to_hrmin(pdata["month"]["time"])}</td></tr>')
 html.append('</table>')
 
