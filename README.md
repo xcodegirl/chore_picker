@@ -8,7 +8,6 @@ This project provides several tools for managing, picking, and scheduling househ
 - `chore_list_editor.py`: Add, edit, or delete chores in the JSON file using a user-friendly interface.
 - `generate_chore_schedule.py`: Generate a fair, balanced schedule for all people, assigning daily, weekly, and monthly chores.
 - `generate_chore_schedule_html.py`: Create a full, color-coded HTML table of the entire schedule for all people and days.
-- `generate_chore_day_person_html.py`: Generate an HTML page showing all chores assigned to a single person for a specific week and day.
 - `chore_day_person_view.html`: Web-based viewer for per-person, per-day schedule lookup.
 - `chore_data.json`: The data file containing all chores, organized by category.
 
@@ -101,14 +100,6 @@ The schedule generator (`generate_chore_schedule.py`) includes advanced fairness
   ```
   - Outputs `chore_schedule.html` for easy viewing in a browser.
 
-### `generate_chore_day_person_html.py`
-- **Purpose:** Generates an HTML page showing all chores assigned to a single person for a specific week and day.
-- **How to use:**
-  ```bash
-  python3 generate_chore_day_person_html.py --person Alice --week 2 --day Monday --output alice_week2_monday.html
-  ```
-  - Replace `Alice`, `2`, and `Monday` with your desired person, week, and day.
-  - The output HTML file can be opened in any browser.
 
 ---
 
