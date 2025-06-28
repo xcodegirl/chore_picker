@@ -77,6 +77,37 @@ The schedule generator (`generate_chore_schedule.py`) includes advanced fairness
 
 ---
 
+## Other Python Scripts
+
+### `generate_chore_schedule.py`
+- **Purpose:** Generates a fair, balanced schedule for all people, assigning daily, weekly, and monthly chores.
+- **How to use:**
+  ```bash
+  python3 generate_chore_schedule.py
+  ```
+  - Outputs `chore_schedule.json` (the full schedule) and `chore_summary.json` (summary stats).
+  - Use `--no-balance` to disable the fairness post-processing step if desired.
+  - Prints assignment and fairness reports to the terminal.
+
+### `generate_chore_schedule_html.py`
+- **Purpose:** Creates a full, color-coded HTML table of the entire schedule for all people and days.
+- **How to use:**
+  ```bash
+  python3 generate_chore_schedule_html.py
+  ```
+  - Outputs `chore_schedule.html` for easy viewing in a browser.
+
+### `generate_chore_day_person_html.py`
+- **Purpose:** Generates an HTML page showing all chores assigned to a single person for a specific week and day.
+- **How to use:**
+  ```bash
+  python3 generate_chore_day_person_html.py --person Alice --week 2 --day Monday --output alice_week2_monday.html
+  ```
+  - Replace `Alice`, `2`, and `Monday` with your desired person, week, and day.
+  - The output HTML file can be opened in any browser.
+
+---
+
 ## Notes
 - The JSON file must be in the same directory as the scripts.
 - If you edit the JSON manually, ensure the format matches the examples.
