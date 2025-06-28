@@ -1,17 +1,16 @@
 {
   "household_chores": {
     "daily": [
-      {"chore": "Make the beds", "score": 1, "time_estimate": 3},
-      {"chore": "Wash dishes", "score": 2, "time_estimate": 10},
+      {"chore": "Tidy porch/hallways", "score": 3, "time_estimate": 12},
+      {"chore": "Wash pots & pans", "score": 2, "time_estimate": 10},
       {"chore": "Wipe kitchen counters", "score": 1, "time_estimate": 5},
       {"chore": "Sweep/vacuum high-traffic areas", "score": 2, "time_estimate": 8},
-      {"chore": "Take out trash/recycling", "score": 1, "time_estimate": 3},
-      {"chore": "Clean stovetop after cooking", "score": 2, "time_estimate": 7},
       {"chore": "Quick bathroom wipe-down", "score": 2, "time_estimate": 6},
-      {"chore": "Feed pets", "score": 1, "time_estimate": 4},
+      {"chore": "Load/unload dishwasher", "score": 1, "time_estimate": 4, "required_daily": true},
       {"chore": "Tidy living areas", "score": 3, "time_estimate": 12},
       {"chore": "Laundry sorting", "score": 1, "time_estimate": 5},
-      {"chore": "Prepare daily meals", "score": 5, "time_estimate": 45},
+      {"chore": "Prepare dinner", "score": 5, "time_estimate": 45, "required_daily": true},
+      {"chore": "Bake bread", "score": 2, "time_estimate": 6},
       {"chore": "Pick up mail", "score": 4, "time_estimate": 20}
     ],
     "weekly": [
@@ -24,9 +23,9 @@
       {"chore": "Clean mirrors", "score": 2, "time_estimate": 8},
       {"chore": "Water plants", "score": 1, "time_estimate": 12},
       {"chore": "Grocery shopping", "score": 5, "time_estimate": 75},
-      {"chore": "Take bins to curb", "score": 1, "time_estimate": 5},
-      {"chore": "Check expired foods", "score": 3, "time_estimate": 15},
-      {"chore": "Meal planning", "score": 4, "time_estimate": 30},
+      {"chore": "Take trash to curb", "score": 1, "time_estimate": 5, "dayofweek": "Wednesday"},
+      {"chore": "Check expired foods", "score": 3, "time_estimate": 15, "dayofweek": "Wednesday"},
+      {"chore": "Meal planning", "score": 4, "time_estimate": 30, "dayofweek": "Sunday"},
       {
         "chore": "Yard work",
         "score": 7,
