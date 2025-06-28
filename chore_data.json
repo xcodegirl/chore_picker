@@ -1,105 +1,39 @@
 {
   "household_chores": {
     "daily": [
-      {
-        "chore": "Make the bed",
-        "score": 1,
-        "time_estimate": 3
-      },
-      {
-        "chore": "Wash dishes",
-        "score": 2,
-        "time_estimate": 10
-      },
-      {
-        "chore": "Wipe kitchen counters",
-        "score": 1,
-        "time_estimate": 5
-      },
-      {
-        "chore": "Sweep/vacuum high-traffic areas",
-        "score": 2,
-        "time_estimate": 8
-      },
-      {
-        "chore": "Take out trash/recycling",
-        "score": 1,
-        "time_estimate": 3
-      },
-      {
-        "chore": "Clean stovetop after cooking",
-        "score": 2,
-        "time_estimate": 7
-      },
-      {
-        "chore": "Quick bathroom wipe-down",
-        "score": 2,
-        "time_estimate": 6
-      },
-      {
-        "chore": "Tidy living areas",
-        "score": 3,
-        "time_estimate": 12
-      },
-      {
-        "chore": "Laundry sorting",
-        "score": 1,
-        "time_estimate": 5
-      }
+      {"chore": "Make the beds", "score": 1, "time_estimate": 3},
+      {"chore": "Wash dishes", "score": 2, "time_estimate": 10},
+      {"chore": "Wipe kitchen counters", "score": 1, "time_estimate": 5},
+      {"chore": "Sweep/vacuum high-traffic areas", "score": 2, "time_estimate": 8},
+      {"chore": "Take out trash/recycling", "score": 1, "time_estimate": 3},
+      {"chore": "Clean stovetop after cooking", "score": 2, "time_estimate": 7},
+      {"chore": "Quick bathroom wipe-down", "score": 2, "time_estimate": 6},
+      {"chore": "Feed pets", "score": 1, "time_estimate": 4},
+      {"chore": "Tidy living areas", "score": 3, "time_estimate": 12},
+      {"chore": "Laundry sorting", "score": 1, "time_estimate": 5},
+      {"chore": "Prepare daily meals", "score": 5, "time_estimate": 45},
+      {"chore": "Pick up mail", "score": 4, "time_estimate": 20}
     ],
     "weekly": [
+      {"chore": "Vacuum floors/carpets", "score": 4, "time_estimate": 25},
+      {"chore": "Mop hard floors", "score": 5, "time_estimate": 30},
+      {"chore": "Clean toilets", "score": 3, "time_estimate": 15},
+      {"chore": "Scrub showers/bathtubs", "score": 6, "time_estimate": 35},
+      {"chore": "Change bed sheets", "score": 2, "time_estimate": 10},
+      {"chore": "Dust surfaces", "score": 3, "time_estimate": 20},
+      {"chore": "Clean mirrors", "score": 2, "time_estimate": 8},
+      {"chore": "Water plants", "score": 1, "time_estimate": 12},
+      {"chore": "Grocery shopping", "score": 5, "time_estimate": 75},
+      {"chore": "Take bins to curb", "score": 1, "time_estimate": 5},
+      {"chore": "Check expired foods", "score": 3, "time_estimate": 15},
+      {"chore": "Meal planning", "score": 4, "time_estimate": 30},
       {
-        "chore": "Vacuum carpets",
-        "score": 4,
-        "time_estimate": 25
-      },
-      {
-        "chore": "Mop hard floors",
-        "score": 5,
-        "time_estimate": 30
-      },
-      {
-        "chore": "Clean toilets",
-        "score": 3,
-        "time_estimate": 15
-      },
-      {
-        "chore": "Scrub showers/bathtubs",
-        "score": 6,
-        "time_estimate": 35
-      },
-      {
-        "chore": "Change bed sheets",
-        "score": 2,
-        "time_estimate": 10
-      },
-      {
-        "chore": "Dust surfaces",
-        "score": 3,
-        "time_estimate": 20
-      },
-      {
-        "chore": "Clean mirrors",
-        "score": 2,
-        "time_estimate": 8
-      },
-      {
-        "chore": "Water plants",
-        "score": 1,
-        "time_estimate": 12
-      },
-      {
-        "chore": "Grocery shopping",
-        "score": 5,
-        "time_estimate": 75
-      },
-      {
-        "chore": "Take bins to curb",
-        "score": 1,
-        "time_estimate": 5
+        "chore": "Yard work",
+        "score": 7,
+        "time_estimate": 40
       }
     ],
-    "monthly": [
+     "monthly": [
       {
         "chore": "Clean refrigerator interior",
         "score": 6,
@@ -158,11 +92,6 @@
         "time_estimate": 60
       },
       {
-        "chore": "Deep clean carpets",
-        "score": 8,
-        "time_estimate": 120
-      },
-      {
         "chore": "Clean mattress",
         "score": 6,
         "time_estimate": 45
@@ -196,6 +125,11 @@
         "chore": "Clean air vents",
         "score": 6,
         "time_estimate": 50
+      },
+      {
+        "chore": "Deep clean inside kitchen cupboards",
+        "score": 8,
+        "time_estimate": 120
       },
       {
         "chore": "Declutter storage areas",
@@ -235,11 +169,6 @@
         "time_estimate": 90
       },
       {
-        "chore": "Seal grout lines",
-        "score": 6,
-        "time_estimate": 120
-      },
-      {
         "chore": "Wash exterior windows",
         "score": 7,
         "time_estimate": 150
@@ -255,25 +184,5 @@
         "time_estimate": 90
       }
     ]
-  },
-  "metadata": {
-    "valuation_rules": {
-      "daily": "Base $5 + (score \u00d7 1)",
-      "weekly": "Base $10 + (score \u00d7 2)",
-      "monthly": "Base $15 + (score \u00d7 3)",
-      "bi-yearly": "Base $20 + (score \u00d7 4)",
-      "yearly": "Base $25 + (score \u00d7 5)"
-    },
-    "time_units": "minutes",
-    "value_insights": {
-      "hourly_rates": {
-        "daily": "$32.10/hr",
-        "weekly": "$32.80/hr",
-        "monthly": "$38.70/hr",
-        "bi-yearly": "$46.00/hr",
-        "yearly": "$61.50/hr"
-      },
-      "value_time_correlation": 0.93
-    }
   }
 }

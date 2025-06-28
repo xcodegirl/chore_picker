@@ -1,0 +1,486 @@
+{
+  "Week 1": {
+    "Monday": {
+      "Alice": {
+        "chore": "Wipe down doors/handles",
+        "score": 2,
+        "time_estimate": 15
+      },
+      "Bob": {
+        "chore": "Make the beds",
+        "score": 1,
+        "time_estimate": 3
+      },
+      "Charlie": {
+        "chore": "Wipe kitchen counters",
+        "score": 1,
+        "time_estimate": 5
+      }
+    },
+    "Tuesday": {
+      "Alice": {
+        "chore": "Feed pets",
+        "score": 1,
+        "time_estimate": 4
+      },
+      "Bob": {
+        "chore": "Feed pets",
+        "score": 1,
+        "time_estimate": 4
+      },
+      "Charlie": {
+        "chore": "Laundry sorting",
+        "score": 1,
+        "time_estimate": 5
+      }
+    },
+    "Wednesday": {
+      "Alice": {
+        "chore": "Scrub showers/bathtubs",
+        "score": 6,
+        "time_estimate": 35
+      },
+      "Bob": {
+        "chore": "Change bed sheets",
+        "score": 2,
+        "time_estimate": 10
+      },
+      "Charlie": {
+        "chore": "Clean washing machine",
+        "score": 4,
+        "time_estimate": 30
+      }
+    },
+    "Thursday": {
+      "Alice": {
+        "chore": "Water plants",
+        "score": 1,
+        "time_estimate": 12
+      },
+      "Bob": {
+        "chore": "Clean washing machine",
+        "score": 4,
+        "time_estimate": 30
+      },
+      "Charlie": {
+        "chore": "Prepare daily meals",
+        "score": 5,
+        "time_estimate": 45
+      }
+    },
+    "Friday": {
+      "Alice": {
+        "chore": "Vacuum carpets",
+        "score": 4,
+        "time_estimate": 25
+      },
+      "Bob": {
+        "chore": "Sweep/vacuum high-traffic areas",
+        "score": 2,
+        "time_estimate": 8
+      },
+      "Charlie": {
+        "chore": "Wipe down kitchen cabinets",
+        "score": 4,
+        "time_estimate": 30
+      }
+    },
+    "Saturday": {
+      "Alice": {
+        "chore": "Clean stovetop after cooking",
+        "score": 2,
+        "time_estimate": 7
+      },
+      "Bob": {
+        "chore": "Clean dishwasher",
+        "score": 4,
+        "time_estimate": 25
+      },
+      "Charlie": {
+        "chore": "Take bins to curb",
+        "score": 1,
+        "time_estimate": 5
+      }
+    },
+    "Sunday": {
+      "Alice": {
+        "chore": "Wipe kitchen counters",
+        "score": 1,
+        "time_estimate": 5
+      },
+      "Bob": {
+        "chore": "Clean light fixtures",
+        "score": 3,
+        "time_estimate": 20
+      },
+      "Charlie": {
+        "chore": "Change bed sheets",
+        "score": 2,
+        "time_estimate": 10
+      }
+    }
+  },
+  "Week 2": {
+    "Monday": {
+      "Alice": {
+        "chore": "Take out trash/recycling",
+        "score": 1,
+        "time_estimate": 3
+      },
+      "Bob": {
+        "chore": "Vacuum carpets",
+        "score": 4,
+        "time_estimate": 25
+      },
+      "Charlie": {
+        "chore": "Vacuum carpets",
+        "score": 4,
+        "time_estimate": 25
+      }
+    },
+    "Tuesday": {
+      "Alice": {
+        "chore": "Clean stovetop after cooking",
+        "score": 2,
+        "time_estimate": 7
+      },
+      "Bob": {
+        "chore": "Mop hard floors",
+        "score": 5,
+        "time_estimate": 30
+      },
+      "Charlie": {
+        "chore": "Laundry sorting",
+        "score": 1,
+        "time_estimate": 5
+      }
+    },
+    "Wednesday": {
+      "Alice": {
+        "chore": "Clean dishwasher",
+        "score": 4,
+        "time_estimate": 25
+      },
+      "Bob": {
+        "chore": "Clean light fixtures",
+        "score": 3,
+        "time_estimate": 20
+      },
+      "Charlie": {
+        "chore": "Grocery shopping",
+        "score": 5,
+        "time_estimate": 75
+      }
+    },
+    "Thursday": {
+      "Alice": {
+        "chore": "Make the beds",
+        "score": 1,
+        "time_estimate": 3
+      },
+      "Bob": {
+        "chore": "Meal planning",
+        "score": 4,
+        "time_estimate": 30
+      },
+      "Charlie": {
+        "chore": "Tidy living areas",
+        "score": 3,
+        "time_estimate": 12
+      }
+    },
+    "Friday": {
+      "Alice": {
+        "chore": "Wash windows",
+        "score": 5,
+        "time_estimate": 40
+      },
+      "Bob": {
+        "chore": "Quick bathroom wipe-down",
+        "score": 2,
+        "time_estimate": 6
+      },
+      "Charlie": {
+        "chore": "Quick bathroom wipe-down",
+        "score": 2,
+        "time_estimate": 6
+      }
+    },
+    "Saturday": {
+      "Alice": {
+        "chore": "Pick up mail",
+        "score": 4,
+        "time_estimate": 20
+      },
+      "Bob": {
+        "chore": "Sweep/vacuum high-traffic areas",
+        "score": 2,
+        "time_estimate": 8
+      },
+      "Charlie": {
+        "chore": "Take out trash/recycling",
+        "score": 1,
+        "time_estimate": 3
+      }
+    },
+    "Sunday": {
+      "Alice": {
+        "chore": "Vacuum upholstery",
+        "score": 3,
+        "time_estimate": 20
+      },
+      "Bob": {
+        "chore": "Wash dishes",
+        "score": 2,
+        "time_estimate": 10
+      },
+      "Charlie": {
+        "chore": "Take bins to curb",
+        "score": 1,
+        "time_estimate": 5
+      }
+    }
+  },
+  "Week 3": {
+    "Monday": {
+      "Alice": {
+        "chore": "Check expired foods",
+        "score": 3,
+        "time_estimate": 15
+      },
+      "Bob": {
+        "chore": "Grocery shopping",
+        "score": 5,
+        "time_estimate": 75
+      },
+      "Charlie": {
+        "chore": "Clean refrigerator interior",
+        "score": 6,
+        "time_estimate": 45
+      }
+    },
+    "Tuesday": {
+      "Alice": {
+        "chore": "Prepare daily meals",
+        "score": 5,
+        "time_estimate": 45
+      },
+      "Bob": {
+        "chore": "Dust surfaces",
+        "score": 3,
+        "time_estimate": 20
+      },
+      "Charlie": {
+        "chore": "Water plants",
+        "score": 1,
+        "time_estimate": 12
+      }
+    },
+    "Wednesday": {
+      "Alice": {
+        "chore": "Vacuum upholstery",
+        "score": 3,
+        "time_estimate": 20
+      },
+      "Bob": {
+        "chore": "Laundry sorting",
+        "score": 1,
+        "time_estimate": 5
+      },
+      "Charlie": {
+        "chore": "Take out trash/recycling",
+        "score": 1,
+        "time_estimate": 3
+      }
+    },
+    "Thursday": {
+      "Alice": {
+        "chore": "Clean mirrors",
+        "score": 2,
+        "time_estimate": 8
+      },
+      "Bob": {
+        "chore": "Wash windows",
+        "score": 5,
+        "time_estimate": 40
+      },
+      "Charlie": {
+        "chore": "Mop hard floors",
+        "score": 5,
+        "time_estimate": 30
+      }
+    },
+    "Friday": {
+      "Alice": {
+        "chore": "Clean toilets",
+        "score": 3,
+        "time_estimate": 15
+      },
+      "Bob": {
+        "chore": "Pick up mail",
+        "score": 4,
+        "time_estimate": 20
+      },
+      "Charlie": {
+        "chore": "Wipe down kitchen cabinets",
+        "score": 4,
+        "time_estimate": 30
+      }
+    },
+    "Saturday": {
+      "Alice": {
+        "chore": "Clean mirrors",
+        "score": 2,
+        "time_estimate": 8
+      },
+      "Bob": {
+        "chore": "Clean refrigerator interior",
+        "score": 6,
+        "time_estimate": 45
+      },
+      "Charlie": {
+        "chore": "Wash dishes",
+        "score": 2,
+        "time_estimate": 10
+      }
+    },
+    "Sunday": {
+      "Alice": {
+        "chore": "Mop hard floors",
+        "score": 5,
+        "time_estimate": 30
+      },
+      "Bob": {
+        "chore": "Prepare daily meals",
+        "score": 5,
+        "time_estimate": 45
+      },
+      "Charlie": {
+        "chore": "Clean oven/microwave",
+        "score": 7,
+        "time_estimate": 50
+      }
+    }
+  },
+  "Week 4": {
+    "Monday": {
+      "Alice": {
+        "chore": "Yard work",
+        "score": 7,
+        "time_estimate": 40
+      },
+      "Bob": {
+        "chore": "Tidy living areas",
+        "score": 3,
+        "time_estimate": 12
+      },
+      "Charlie": {
+        "chore": "Tidy living areas",
+        "score": 3,
+        "time_estimate": 12
+      }
+    },
+    "Tuesday": {
+      "Alice": {
+        "chore": "Feed pets",
+        "score": 1,
+        "time_estimate": 4
+      },
+      "Bob": {
+        "chore": "Quick bathroom wipe-down",
+        "score": 2,
+        "time_estimate": 6
+      },
+      "Charlie": {
+        "chore": "Wash dishes",
+        "score": 2,
+        "time_estimate": 10
+      }
+    },
+    "Wednesday": {
+      "Alice": {
+        "chore": "Wipe down doors/handles",
+        "score": 2,
+        "time_estimate": 15
+      },
+      "Bob": {
+        "chore": "Yard work",
+        "score": 7,
+        "time_estimate": 40
+      },
+      "Charlie": {
+        "chore": "Check expired foods",
+        "score": 3,
+        "time_estimate": 15
+      }
+    },
+    "Thursday": {
+      "Alice": {
+        "chore": "Pick up mail",
+        "score": 4,
+        "time_estimate": 20
+      },
+      "Bob": {
+        "chore": "Dust baseboards",
+        "score": 4,
+        "time_estimate": 25
+      },
+      "Charlie": {
+        "chore": "Wipe kitchen counters",
+        "score": 1,
+        "time_estimate": 5
+      }
+    },
+    "Friday": {
+      "Alice": {
+        "chore": "Dust baseboards",
+        "score": 4,
+        "time_estimate": 25
+      },
+      "Bob": {
+        "chore": "Clean toilets",
+        "score": 3,
+        "time_estimate": 15
+      },
+      "Charlie": {
+        "chore": "Clean stovetop after cooking",
+        "score": 2,
+        "time_estimate": 7
+      }
+    },
+    "Saturday": {
+      "Alice": {
+        "chore": "Dust surfaces",
+        "score": 3,
+        "time_estimate": 20
+      },
+      "Bob": {
+        "chore": "Make the beds",
+        "score": 1,
+        "time_estimate": 3
+      },
+      "Charlie": {
+        "chore": "Meal planning",
+        "score": 4,
+        "time_estimate": 30
+      }
+    },
+    "Sunday": {
+      "Alice": {
+        "chore": "Clean oven/microwave",
+        "score": 7,
+        "time_estimate": 50
+      },
+      "Bob": {
+        "chore": "Scrub showers/bathtubs",
+        "score": 6,
+        "time_estimate": 35
+      },
+      "Charlie": {
+        "chore": "Sweep/vacuum high-traffic areas",
+        "score": 2,
+        "time_estimate": 8
+      }
+    }
+  }
+}
