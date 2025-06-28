@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chore Viewer: Per Person, Per Day</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8fafc; color: #222; margin: 2em; }
+    h1 { color: #2563eb; }
+    .controls { margin-bottom: 1.5em; }
+    select { font-size: 1em; margin-right: 1em; }
+    table { border-collapse: collapse; margin-top: 1.5em; width: 100%; max-width: 600px; }
+    th, td { border: 1px solid #bbb; padding: 8px 12px; text-align: left; }
+    th { background: #90caf9; }
+    .required { background: #ffcdd2; }
+    .fixed { background: #d1c4e9; }
+    .monthly { background: #c8e6c9; }
+    .weekly { background: #ffe0b2; }
+    .daily { background: #e0f7fa; }
+    .label { font-size: 0.9em; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+    .none { color: #888; font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Chore Viewer: Per Person, Per Day</h1>
+  <div class="controls">
+    <label>Person:
+      <select id="person"></select>
+    </label>
+    <label>Week:
+      <select id="week"></select>
+    </label>
+    <label>Day:
+      <select id="day"></select>
+    </label>
+    <button onclick="updateView()">Show</button>
+  </div>
+  <div id="output"></div>
+  <script>
+    // Config
+    const PEOPLE = ['Alice', 'Bob', 'Charlie', 'Dana', 'Eli'];
+    const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const WEEKS = [1,2,3,4];
+    // Populate dropdowns
+    function fillDropdown(id, arr) {
+      const sel = document.getElementById(id);
+      arr.forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v;
+        sel.appendChild(opt);
+      });
+    }
+    fillDropdown('person', PEOPLE);
+    fillDropdown('week', WEEKS);
+    fillDropdown('day', DAYS);
+    // Load JSON files
+    let schedule = null;
+    let choreData = null;
+    fetch('chore_schedule.json')
+      .then(r => r.json())
+      .then(data => { schedule = data; })
+      .catch(() => alert('Could not load chore_schedule.json. Place this file in the same directory.'));
+    fetch('chore_data.json')
+      .then(r => r.json())
+      .then(data => { choreData = data; })
+      .catch(() => {}); // optional
+    function getChoreType(chore) {
+      if (chore.required_daily) return 'required';
+      if (chore.dayofweek) return 'fixed';
+      if (chore.type) return chore.type;
+      if (choreData) {
+        const d = choreData.household_chores;
+        if (d.daily.some(c => c.chore === chore.chore)) return 'daily';
+        if (d.weekly.some(c => c.chore === chore.chore)) return 'weekly';
+        if (d.monthly.some(c => c.chore === chore.chore)) return 'monthly';
+      }
+      return 'daily';
+    }
+    function getLabels(chore) {
+      let labels = [];
+      if (chore.required_daily) labels.push('<span class="label" style="background:#e57373;color:#fff">Required</span>');
+      if (chore.dayofweek) labels.push('<span class="label" style="background:#9575cd;color:#fff">Fixed Day</span>');
+      if (getChoreType(chore) === 'monthly') labels.push('<span class="label" style="background:#388e3c;color:#fff">Monthly</span>');
+      return labels.join(' ');
+    }
+    function updateView() {
+      if (!schedule) { document.getElementById('output').innerHTML = '<div class="none">Schedule not loaded.</div>'; return; }
+      const person = document.getElementById('person').value;
+      const week = document.getElementById('week').value;
+      const day = document.getElementById('day').value;
+      const weekKey = 'Week ' + week;
+      let chores = [];
+      if (schedule[weekKey] && schedule[weekKey][day] && schedule[weekKey][day][person]) {
+        chores = schedule[weekKey][day][person];
+      }
+      let html = `<h2>${person} — ${day}, Week ${week}</h2>`;
+      if (!chores.length) {
+        html += '<div class="none">No chores assigned for this day.</div>';
+      } else {
+        html += '<table><tr><th>Chore</th><th>Type</th><th>Time (min)</th><th>Score</th></tr>';
+        chores.forEach(chore => {
+          let c = chore;
+          // If string, try to look up details
+          if (typeof c === 'string' && choreData) {
+            let found = null;
+            ['daily','weekly','monthly'].forEach(type => {
+              if (!found) found = choreData.household_chores[type].find(ch => ch.chore === c);
+            });
+            if (found) c = found;
+            else c = { chore: c };
+          }
+          const ctype = getChoreType(c);
+          const rowClass = ctype;
+          html += `<tr class="${rowClass}"><td>${c.chore} ${getLabels(c)}</td><td>${ctype.charAt(0).toUpperCase()+ctype.slice(1)}</td><td>${c.time_estimate||''}</td><td>${c.score||''}</td></tr>`;
+        });
+        html += '</table>';
+      }
+      document.getElementById('output').innerHTML = html;
+    }
+    // Show initial view after both files load
+    setTimeout(updateView, 500);
+  </script>
+</body>
+</html>
