@@ -8,8 +8,9 @@ This project provides several tools for managing, picking, and scheduling househ
 - `chore_list_editor.py`: Add, edit, or delete chores in the JSON file using a user-friendly interface.
 - `generate_chore_schedule.py`: Generate a fair, balanced schedule for all people, assigning daily, weekly, and monthly chores.
 - `generate_chore_schedule_html.py`: Create a full, color-coded HTML table of the entire schedule for all people and days.
-- `chore_day_person_view.html`: Web-based viewer for per-person, per-day schedule lookup.
+- `chore_day_person_view.html`: Web-based viewer for per-person, per-day schedule lookup. Use URL parameters to select the view (see usage below).
 - `chore_data.json`: The data file containing all chores, organized by category.
+- `chore_schedule_gui.py`: Tkinter GUI to set the number of people and generate a schedule interactively.
 
 ## Requirements
 - Python 3.x
@@ -33,28 +34,38 @@ python3 chore_list_editor.py
 - Select a category.
 - Add, edit, or delete chores. All changes are saved to the JSON file.
 
-#
-# Web-based Per-Person, Per-Day Chore Viewer
+### 3. Generate a Schedule (Command-line)
+Run:
+```bash
+python3 generate_chore_schedule.py
+```
+- This will create `chore_schedule.json` and `chore_data.json` in the current directory.
+- Use `--no-balance` to disable the fairness post-processing step if desired.
+- Prints assignment and fairness reports to the terminal.
 
-A web-based viewer is provided for easy per-person, per-day schedule lookup:
+### 4. Generate a Schedule (GUI)
+Run:
+```bash
+python3 chore_schedule_gui.py
+```
+- Set the number of people (2–10) and click "Generate Schedule".
+- The schedule will be saved as `chore_schedule.json`.
 
-## How to Use the HTML Chore Viewer
-
-1. **Generate the schedule** (if not already done):
-   ```bash
-   python3 generate_chore_schedule.py
-   ```
-   This will create `chore_schedule.json` and `chore_data.json` in the current directory.
-
-2. **Start a local web server** in the `chore_picker` directory (required for browser security):
+### 5. View Schedule in Browser
+1. **Start a local web server** in the `chore_picker` directory (required for browser security):
    ```bash
    python3 -m http.server 8000
    ```
 
-3. **Open your browser** and go to:
-   [http://localhost:8000/chore_day_person_view.html](http://localhost:8000/chore_day_person_view.html)
-
-4. **Select a person, week, and day** from the dropdown menus to view their assigned chores for that day.
+2. **Open your browser** and go to:
+   ```
+   http://localhost:8000/chore_day_person_view.html?person=Alice&week=2&day=Monday
+   ```
+   - Change `person`, `week`, and `day` in the URL to view any combination you want.
+   - Valid values:
+     - `person`: Alice, Bob, Charlie, Dana, Eli
+     - `week`: 1, 2, 3, 4
+     - `day`: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 
 > **Note:** Opening the HTML file directly (with a `file://` URL) will not work due to browser security restrictions. Always use a local web server as shown above.
 
@@ -99,6 +110,25 @@ The schedule generator (`generate_chore_schedule.py`) includes advanced fairness
   python3 generate_chore_schedule_html.py
   ```
   - Outputs `chore_schedule.html` for easy viewing in a browser.
+
+### `chore_schedule_gui.py`
+- **Purpose:** Interactive GUI to set the number of people and generate a schedule.
+- **How to use:**
+  ```bash
+  python3 chore_schedule_gui.py
+  ```
+  - Set the number of people (2–10) and click "Generate Schedule".
+  - The schedule will be saved as `chore_schedule.json`.
+
+### Command-line example for custom people file
+You can also run the schedule generator directly with a custom people file:
+```bash
+python3 generate_chore_schedule.py --people-file people.json
+```
+- `people.json` should be a JSON array of names, e.g.:
+  ```json
+  ["Alice", "Bob", "Charlie", "Dana", "Eli"]
+  ```
 
 
 ---

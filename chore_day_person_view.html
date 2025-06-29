@@ -6,8 +6,6 @@
   <style>
     body { font-family: Arial, sans-serif; background: #f8fafc; color: #222; margin: 2em; }
     h1 { color: #2563eb; }
-    .controls { margin-bottom: 1.5em; }
-    select { font-size: 1em; margin-right: 1em; }
     table { border-collapse: collapse; margin-top: 1.5em; width: 100%; max-width: 600px; }
     th, td { border: 1px solid #bbb; padding: 8px 12px; text-align: left; }
     th { background: #90caf9; }
@@ -22,47 +20,30 @@
 </head>
 <body>
   <h1>Chore Viewer: Per Person, Per Day</h1>
-  <div class="controls">
-    <label>Person:
-      <select id="person"></select>
-    </label>
-    <label>Week:
-      <select id="week"></select>
-    </label>
-    <label>Day:
-      <select id="day"></select>
-    </label>
-    <button onclick="updateView()">Show</button>
-  </div>
   <div id="output"></div>
   <script>
     // Config
     const PEOPLE = ['Alice', 'Bob', 'Charlie', 'Dana', 'Eli'];
     const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     const WEEKS = [1,2,3,4];
-    // Populate dropdowns
-    function fillDropdown(id, arr) {
-      const sel = document.getElementById(id);
-      arr.forEach(v => {
-        const opt = document.createElement('option');
-        opt.value = v;
-        opt.textContent = v;
-        sel.appendChild(opt);
-      });
+    // Parse URL parameters
+    function getParam(name, fallback) {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(name) || fallback;
     }
-    fillDropdown('person', PEOPLE);
-    fillDropdown('week', WEEKS);
-    fillDropdown('day', DAYS);
+    const person = getParam('person', PEOPLE[0]);
+    const week = getParam('week', WEEKS[0]);
+    const day = getParam('day', DAYS[0]);
     // Load JSON files
     let schedule = null;
     let choreData = null;
     fetch('chore_schedule.json')
       .then(r => r.json())
-      .then(data => { schedule = data; })
-      .catch(() => alert('Could not load chore_schedule.json. Place this file in the same directory.'));
+      .then(data => { schedule = data; showView(); })
+      .catch(() => document.getElementById('output').innerHTML = '<div class="none">Could not load chore_schedule.json.</div>');
     fetch('chore_data.json')
       .then(r => r.json())
-      .then(data => { choreData = data; })
+      .then(data => { choreData = data; showView(); })
       .catch(() => {}); // optional
     function getChoreType(chore) {
       if (chore.required_daily) return 'required';
@@ -83,11 +64,8 @@
       if (getChoreType(chore) === 'monthly') labels.push('<span class="label" style="background:#388e3c;color:#fff">Monthly</span>');
       return labels.join(' ');
     }
-    function updateView() {
-      if (!schedule) { document.getElementById('output').innerHTML = '<div class="none">Schedule not loaded.</div>'; return; }
-      const person = document.getElementById('person').value;
-      const week = document.getElementById('week').value;
-      const day = document.getElementById('day').value;
+    function showView() {
+      if (!schedule) return;
       const weekKey = 'Week ' + week;
       let chores = [];
       if (schedule[weekKey] && schedule[weekKey][day] && schedule[weekKey][day][person]) {
@@ -117,8 +95,6 @@
       }
       document.getElementById('output').innerHTML = html;
     }
-    // Show initial view after both files load
-    setTimeout(updateView, 500);
   </script>
 </body>
 </html>

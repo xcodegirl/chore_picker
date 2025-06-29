@@ -17,6 +17,9 @@ with open('chore_data.json', 'r') as f:
 with open('chore_summary.json', 'r') as f:
     summary = json.load(f)
 
+# Always use hardcoded people list
+people = ['Alice', 'Bob', 'Charlie', 'Dana', 'Eli']
+
 # Build lookup for required chores and type
 chore_type = {}
 required_daily = set()
@@ -43,10 +46,10 @@ html.append('<h1>Monthly Chore Schedule</h1>')
 for week, week_data in schedule.items():
     html.append(f'<div class="week-title">{week}</div>')
     html.append('<table>')
-    html.append('<tr><th>Day</th><th>Alice</th><th>Bob</th><th>Charlie</th><th>Dana</th><th>Eli</th></tr>')
+    html.append('<tr><th>Day</th>' + ''.join(f'<th>{person}</th>' for person in people) + '</tr>')
     for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
         html.append(f'<tr><td>{day}</td>')
-        for person in ['Alice', 'Bob', 'Charlie', 'Dana', 'Eli']:
+        for person in people:
             chores = week_data.get(day, {}).get(person, [])
             if not isinstance(chores, list):
                 chores = [chores]

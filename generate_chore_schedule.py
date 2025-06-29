@@ -4,14 +4,30 @@ from collections import defaultdict
 from copy import deepcopy
 import argparse
 
+# --- Fairness Parameters ---
+# Allow CLI override for fairness thresholds
+parser = argparse.ArgumentParser(description='Generate a fair chore schedule.')
+parser.add_argument('--no-balance', action='store_true', help='Disable post-processing fairness adjustment')
+parser.add_argument('--chore-data-file', type=str, default='chore_data.json', help='Path to JSON file with chore data (default: chore_data.json)')
+parser.add_argument('--fair-score-diff', type=int, default=12, help='Max allowed difference in score for fairness (default: 12)')
+parser.add_argument('--fair-time-diff', type=int, default=60, help='Max allowed difference in time (minutes) for fairness (default: 60)')
+parser.add_argument('--chore-capacity', type=int, default=2, help='Number of chores per person per day (default: 2)')
+args = parser.parse_args()
+
+FAIR_SCORE_DIFF = args.fair_score_diff
+FAIR_TIME_DIFF = args.fair_time_diff
+chore_capacity = args.chore_capacity
+# --- End Fairness Parameters ---
+
 # Load chores from JSON file
-with open('chore_data.json', 'r') as f:
+with open(args.chore_data_file, 'r') as f:
     data = json.load(f)
 
+# Always use hardcoded people list
 people = ['Alice', 'Bob', 'Charlie', 'Dana', 'Eli']
 days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 weeks = 4  # Changed from 8 to 4 for one month
-chore_capacity = 2  # Number of chores per person per day
+chore_capacity = args.chore_capacity  # Number of chores per person per day
 
 # Separate chores by type
 weekly_chores = data['household_chores']['weekly']
@@ -172,11 +188,14 @@ for week in range(1, weeks+1):
                     schedule[f'Week {week}']['Sunday'].setdefault(person, []).append(monthly_choice)
 # Save to file
 with open('chore_schedule.json', 'w') as f:
-    json.dump(schedule, f, indent=2)
+    json.dump({k: v for k, v in schedule.items()}, f, indent=2)
 
 # Calculate summary stats
 summary = {person: {'weeks': {}, 'month': {'score': 0, 'time': 0}, 'two_months': {'score': 0, 'time': 0}} for person in people}
 for week, week_data in schedule.items():
+    # Only process week keys (skip any non-week keys, e.g., if present)
+    if not str(week).startswith('Week '):
+        continue
     for person in people:
         week_score = 0
         week_time = 0
@@ -260,15 +279,8 @@ else:
     if weekly_over_4:
         print('Weekly chores done MORE than 4 times in the schedule period:', sorted(weekly_over_4))
 
-# --- Fairness Parameters ---
-FAIR_SCORE_DIFF = 12  # Allow up to 20 points difference in score
-FAIR_TIME_DIFF = 60  # Allow up to 120 minutes difference in time
-# --- End Fairness Parameters ---
-
 # --- Command-line argument for post-processing ---
-parser = argparse.ArgumentParser(description='Generate a fair chore schedule.')
-parser.add_argument('--no-balance', action='store_true', help='Disable post-processing fairness adjustment')
-args = parser.parse_args()
+# Remove all people file loading logic; always use hardcoded people
 # --- End Command-line argument ---
 
 # --- Post-process Adjustment for Fairness ---
@@ -294,7 +306,7 @@ def postprocess_balance(schedule, summary, people, days, weeks, max_iterations=1
         min_time_person = min(month_times, key=month_times.get)
         time_diff = month_times[max_time_person] - month_times[min_time_person]
         if score_diff <= fair_score_diff and time_diff <= fair_time_diff:
-            print(f'  Fairness achieved after {iteration} swap rounds.')
+            # print(f'  Fairness achieved after {iteration} swap rounds.')
             break
         # Try all possible swappable pairs and pick the best improvement
         best_improvement = 0
@@ -333,16 +345,16 @@ def postprocess_balance(schedule, summary, people, days, weeks, max_iterations=1
                                     best_swap = (week, day, p1, i, c1, p2, j, c2, new_score_diff, new_time_diff)
         if best_swap:
             week, day, p1, i, c1, p2, j, c2, new_score_diff, new_time_diff = best_swap
-            print(f"  Swap in Week {week}, {day}: {p1} ('{c1['chore']}')  {p2} ('{c2['chore']}') -> score diff: {score_diff}->{new_score_diff}, time diff: {time_diff}->{new_time_diff}")
+            # print(f"  Swap in Week {week}, {day}: {p1} ('{c1['chore']}')  ￼ {p2} ('{c2['chore']}') -> score diff: {score_diff}->{new_score_diff}, time diff: {time_diff}->{new_time_diff}")
             # Perform the swap
             week_data = schedule[f'Week {week}']
             chores1 = week_data[day][p1]
             chores2 = week_data[day][p2]
             chores1[i], chores2[j] = chores2[j], chores1[i]
         else:
-            print(f'  No more beneficial swaps found after {iteration+1} rounds.')
+            # print(f'  No more beneficial swaps found after {iteration+1} rounds.')
             break
-    print('--- End post-processing ---')
+    # print('--- End post-processing ---')
     return schedule
 # --- End Post-process Adjustment ---
 
@@ -352,6 +364,8 @@ if not args.no_balance:
     # Recalculate summary after adjustment
     summary = {person: {'weeks': {}, 'month': {'score': 0, 'time': 0}, 'two_months': {'score': 0, 'time': 0}} for person in people}
     for week, week_data in schedule.items():
+        if not str(week).startswith('Week '):
+            continue
         for person in people:
             week_score = 0
             week_time = 0
