@@ -1,7 +1,7 @@
 {
   "Week 1": {
     "Monday": {
-      "Eli": [
+      "Dana": [
         {
           "chore": "Grocery shopping",
           "score": 5,
@@ -9,12 +9,12 @@
           "dayofweek": "Monday"
         },
         {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
         }
       ],
-      "Alice": [
+      "Bob": [
         {
           "chore": "Load/unload dishwasher",
           "score": 1,
@@ -22,51 +22,51 @@
           "required_daily": true
         },
         {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
         }
       ],
-      "Bob": [
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        },
+      "Alice": [
         {
           "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Wipe kitchen counters",
           "score": 1,
           "time_estimate": 5
         }
       ],
       "Charlie": [
         {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
           "chore": "Wash pots & pans",
           "score": 2,
           "time_estimate": 10
-        },
+        }
+      ],
+      "Eli": [
         {
           "chore": "Sweep/vacuum high-traffic areas",
           "score": 2,
           "time_estimate": 8
-        }
-      ],
-      "Dana": [
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
         },
         {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
         }
       ]
     },
     "Wednesday": {
-      "Charlie": [
+      "Bob": [
         {
           "chore": "Take trash to curb",
           "score": 1,
@@ -74,10 +74,9 @@
           "dayofweek": "Wednesday"
         },
         {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
         }
       ],
       "Eli": [
@@ -88,51 +87,52 @@
           "dayofweek": "Wednesday"
         },
         {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Clean toilets",
-          "score": 3,
-          "time_estimate": 15
-        },
-        {
-          "chore": "Bake bread",
+          "chore": "Quick bathroom wipe-down",
           "score": 2,
           "time_estimate": 6
         }
       ],
       "Dana": [
         {
-          "chore": "Water plants",
+          "chore": "Load/unload dishwasher",
           "score": 1,
-          "time_estimate": 12
+          "time_estimate": 4,
+          "required_daily": true
         },
         {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
         }
       ],
       "Alice": [
         {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
         },
         {
-          "chore": "Sweep/vacuum high-traffic areas",
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Wash pots & pans",
           "score": 2,
-          "time_estimate": 8
+          "time_estimate": 10
+        },
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
         }
       ]
     },
     "Sunday": {
-      "Bob": [
+      "Dana": [
         {
           "chore": "Meal planning",
           "score": 4,
@@ -140,14 +140,31 @@
           "dayofweek": "Sunday"
         },
         {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
         },
         {
-          "chore": "Wipe down kitchen cabinets",
+          "chore": "Dust baseboards",
           "score": 4,
+          "time_estimate": 25
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Mop hard floors",
+          "score": 5,
           "time_estimate": 30
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Clean refrigerator interior",
+          "score": 6,
+          "time_estimate": 45
         }
       ],
       "Eli": [
@@ -158,7 +175,7 @@
           "required_daily": true
         },
         {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
@@ -169,31 +186,31 @@
           "time_estimate": 40
         }
       ],
-      "Alice": [
+      "Bob": [
         {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
         },
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        },
+        {
+          "chore": "Wipe down kitchen cabinets",
+          "score": 4,
+          "time_estimate": 30
+        }
+      ],
+      "Charlie": [
         {
           "chore": "Sweep/vacuum high-traffic areas",
           "score": 2,
           "time_estimate": 8
         },
         {
-          "chore": "Clean refrigerator interior",
-          "score": 6,
-          "time_estimate": 45
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
-          "chore": "Wipe kitchen counters",
+          "chore": "Laundry sorting",
           "score": 1,
           "time_estimate": 5
         },
@@ -202,38 +219,9 @@
           "score": 7,
           "time_estimate": 50
         }
-      ],
-      "Dana": [
-        {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
-        },
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Dust baseboards",
-          "score": 4,
-          "time_estimate": 25
-        }
       ]
     },
-    "Saturday": {
-      "Bob": [
-        {
-          "chore": "Change bed sheets",
-          "score": 2,
-          "time_estimate": 10
-        },
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ],
+    "Tuesday": {
       "Alice": [
         {
           "chore": "Clean mirrors",
@@ -241,115 +229,12 @@
           "time_estimate": 8
         },
         {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ],
-      "Charlie": [
-        {
           "chore": "Load/unload dishwasher",
           "score": 1,
           "time_estimate": 4,
           "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
         }
       ],
-      "Dana": [
-        {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
-        },
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        },
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ]
-    },
-    "Friday": {
-      "Charlie": [
-        {
-          "chore": "Scrub showers/bathtubs",
-          "score": 6,
-          "time_estimate": 35
-        },
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ],
-      "Dana": [
-        {
-          "chore": "Yard work",
-          "score": 7,
-          "time_estimate": 40
-        },
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        },
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ]
-    },
-    "Tuesday": {
       "Dana": [
         {
           "chore": "Vacuum floors/carpets",
@@ -357,63 +242,11 @@
           "time_estimate": 25
         },
         {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Mop hard floors",
-          "score": 5,
-          "time_estimate": 30
-        },
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        },
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ],
-      "Charlie": [
-        {
           "chore": "Wash pots & pans",
           "score": 2,
           "time_estimate": 10
-        },
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
         }
       ],
-      "Eli": [
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ]
-    },
-    "Thursday": {
       "Eli": [
         {
           "chore": "Dust surfaces",
@@ -421,166 +254,48 @@
           "time_estimate": 20
         },
         {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        },
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Dana": [
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        },
-        {
           "chore": "Bake bread",
           "score": 2,
           "time_estimate": 6
         }
-      ]
-    }
-  },
-  "Week 2": {
-    "Monday": {
-      "Eli": [
-        {
-          "chore": "Grocery shopping",
-          "score": 5,
-          "time_estimate": 75,
-          "dayofweek": "Monday"
-        },
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        }
       ],
-      "Charlie": [
+      "Bob": [
         {
           "chore": "Clean toilets",
           "score": 3,
           "time_estimate": 15
         },
         {
-          "chore": "Prepare dinner",
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
-        }
-      ],
-      "Dana": [
-        {
-          "chore": "Yard work",
-          "score": 7,
-          "time_estimate": 40
-        },
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
         },
         {
           "chore": "Tidy porch/hallways",
           "score": 3,
           "time_estimate": 12
         }
-      ],
-      "Bob": [
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        }
       ]
     },
-    "Wednesday": {
-      "Eli": [
-        {
-          "chore": "Take trash to curb",
-          "score": 1,
-          "time_estimate": 5,
-          "dayofweek": "Wednesday"
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ],
+    "Friday": {
       "Bob": [
         {
-          "chore": "Check expired foods",
-          "score": 3,
-          "time_estimate": 15,
-          "dayofweek": "Wednesday"
-        },
-        {
-          "chore": "Wash pots & pans",
+          "chore": "Change bed sheets",
           "score": 2,
           "time_estimate": 10
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Mop hard floors",
-          "score": 5,
-          "time_estimate": 30
         },
         {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
         }
       ],
       "Charlie": [
@@ -591,40 +306,50 @@
           "required_daily": true
         },
         {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
         }
       ],
-      "Dana": [
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        },
+      "Alice": [
         {
           "chore": "Quick bathroom wipe-down",
           "score": 2,
           "time_estimate": 6
+        },
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Dana": [
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        },
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        },
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
         }
       ]
     },
-    "Sunday": {
-      "Dana": [
-        {
-          "chore": "Meal planning",
-          "score": 4,
-          "time_estimate": 30,
-          "dayofweek": "Sunday"
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
+    "Thursday": {
       "Eli": [
         {
           "chore": "Water plants",
@@ -632,13 +357,102 @@
           "time_estimate": 12
         },
         {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Yard work",
+          "score": 7,
+          "time_estimate": 40
+        },
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Charlie": [
+        {
           "chore": "Load/unload dishwasher",
           "score": 1,
           "time_estimate": 4,
           "required_daily": true
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
         }
       ],
       "Alice": [
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ],
+      "Dana": [
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ]
+    },
+    "Saturday": {
+      "Dana": [
+        {
+          "chore": "Scrub showers/bathtubs",
+          "score": 6,
+          "time_estimate": 35
+        },
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Bob": [
         {
           "chore": "Quick bathroom wipe-down",
           "score": 2,
@@ -650,6 +464,61 @@
           "time_estimate": 10
         }
       ],
+      "Eli": [
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        }
+      ]
+    }
+  },
+  "Week 2": {
+    "Monday": {
+      "Alice": [
+        {
+          "chore": "Grocery shopping",
+          "score": 5,
+          "time_estimate": 75,
+          "dayofweek": "Monday"
+        },
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Mop hard floors",
+          "score": 5,
+          "time_estimate": 30
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Vacuum floors/carpets",
+          "score": 4,
+          "time_estimate": 25
+        },
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ],
       "Bob": [
         {
           "chore": "Sweep/vacuum high-traffic areas",
@@ -657,30 +526,97 @@
           "time_estimate": 8
         },
         {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
         }
       ],
-      "Charlie": [
+      "Dana": [
         {
           "chore": "Tidy porch/hallways",
           "score": 3,
           "time_estimate": 12
         },
         {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ]
+    },
+    "Wednesday": {
+      "Charlie": [
+        {
+          "chore": "Take trash to curb",
+          "score": 1,
+          "time_estimate": 5,
+          "dayofweek": "Wednesday"
+        },
+        {
           "chore": "Wipe kitchen counters",
           "score": 1,
           "time_estimate": 5
         }
-      ]
-    },
-    "Thursday": {
+      ],
+      "Alice": [
+        {
+          "chore": "Check expired foods",
+          "score": 3,
+          "time_estimate": 15,
+          "dayofweek": "Wednesday"
+        },
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Dana": [
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        }
+      ],
       "Bob": [
         {
-          "chore": "Dust surfaces",
-          "score": 3,
-          "time_estimate": 20
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        },
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ]
+    },
+    "Sunday": {
+      "Bob": [
+        {
+          "chore": "Meal planning",
+          "score": 4,
+          "time_estimate": 30,
+          "dayofweek": "Sunday"
         },
         {
           "chore": "Bake bread",
@@ -701,50 +637,12 @@
           "required_daily": true
         }
       ],
-      "Eli": [
+      "Charlie": [
         {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
-        },
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        },
-        {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        },
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ]
-    },
-    "Friday": {
-      "Dana": [
-        {
-          "chore": "Vacuum floors/carpets",
-          "score": 4,
-          "time_estimate": 25
         },
         {
           "chore": "Laundry sorting",
@@ -752,6 +650,96 @@
           "time_estimate": 5
         }
       ],
+      "Alice": [
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        },
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ]
+    },
+    "Friday": {
+      "Dana": [
+        {
+          "chore": "Clean toilets",
+          "score": 3,
+          "time_estimate": 15
+        },
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        }
+      ]
+    },
+    "Saturday": {
       "Charlie": [
         {
           "chore": "Scrub showers/bathtubs",
@@ -765,32 +753,44 @@
           "required_daily": true
         }
       ],
-      "Eli": [
+      "Alice": [
         {
-          "chore": "Prepare dinner",
+          "chore": "Change bed sheets",
+          "score": 2,
+          "time_estimate": 10
+        },
+        {
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
-        },
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
         }
       ],
-      "Alice": [
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        },
+      "Bob": [
         {
           "chore": "Bake bread",
           "score": 2,
           "time_estimate": 6
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
         }
       ],
-      "Bob": [
+      "Dana": [
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        },
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Eli": [
         {
           "chore": "Tidy porch/hallways",
           "score": 3,
@@ -804,11 +804,23 @@
       ]
     },
     "Tuesday": {
+      "Alice": [
+        {
+          "chore": "Dust surfaces",
+          "score": 3,
+          "time_estimate": 20
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ],
       "Dana": [
         {
-          "chore": "Change bed sheets",
-          "score": 2,
-          "time_estimate": 10
+          "chore": "Water plants",
+          "score": 1,
+          "time_estimate": 12
         },
         {
           "chore": "Tidy porch/hallways",
@@ -816,7 +828,7 @@
           "time_estimate": 12
         }
       ],
-      "Eli": [
+      "Bob": [
         {
           "chore": "Load/unload dishwasher",
           "score": 1,
@@ -824,50 +836,50 @@
           "required_daily": true
         },
         {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
         }
       ],
-      "Alice": [
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
-        }
-      ],
-      "Bob": [
+      "Charlie": [
         {
           "chore": "Sweep/vacuum high-traffic areas",
           "score": 2,
           "time_estimate": 8
         },
         {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
         }
       ],
-      "Charlie": [
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        },
+      "Eli": [
         {
           "chore": "Laundry sorting",
           "score": 1,
           "time_estimate": 5
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
         }
       ]
     },
-    "Saturday": {
+    "Thursday": {
+      "Bob": [
+        {
+          "chore": "Yard work",
+          "score": 7,
+          "time_estimate": 40
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ],
       "Eli": [
         {
           "chore": "Load/unload dishwasher",
@@ -876,7 +888,7 @@
           "required_daily": true
         },
         {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
@@ -884,33 +896,9 @@
       ],
       "Alice": [
         {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        },
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
           "chore": "Bake bread",
           "score": 2,
           "time_estimate": 6
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
         },
         {
           "chore": "Quick bathroom wipe-down",
@@ -918,16 +906,28 @@
           "time_estimate": 6
         }
       ],
-      "Dana": [
+      "Charlie": [
         {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
         },
         {
           "chore": "Tidy living areas",
           "score": 3,
           "time_estimate": 12
+        }
+      ],
+      "Dana": [
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
+        },
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
         }
       ]
     }
@@ -942,6 +942,98 @@
           "dayofweek": "Monday"
         },
         {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Scrub showers/bathtubs",
+          "score": 6,
+          "time_estimate": 35
+        },
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        },
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        }
+      ]
+    },
+    "Wednesday": {
+      "Dana": [
+        {
+          "chore": "Take trash to curb",
+          "score": 1,
+          "time_estimate": 5,
+          "dayofweek": "Wednesday"
+        },
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Check expired foods",
+          "score": 3,
+          "time_estimate": 15,
+          "dayofweek": "Wednesday"
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Change bed sheets",
+          "score": 2,
+          "time_estimate": 10
+        },
+        {
           "chore": "Tidy porch/hallways",
           "score": 3,
           "time_estimate": 12
@@ -949,17 +1041,248 @@
       ],
       "Bob": [
         {
+          "chore": "Clean mirrors",
+          "score": 2,
+          "time_estimate": 8
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ]
+    },
+    "Sunday": {
+      "Bob": [
+        {
+          "chore": "Meal planning",
+          "score": 4,
+          "time_estimate": 30,
+          "dayofweek": "Sunday"
+        },
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Wipe down doors/handles",
+          "score": 2,
+          "time_estimate": 15
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Yard work",
+          "score": 7,
+          "time_estimate": 40
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Vacuum upholstery",
+          "score": 3,
+          "time_estimate": 20
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        },
+        {
+          "chore": "Clean light fixtures",
+          "score": 3,
+          "time_estimate": 20
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
+        },
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        },
+        {
+          "chore": "Clean washing machine",
+          "score": 4,
+          "time_estimate": 30
+        }
+      ],
+      "Dana": [
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        },
+        {
+          "chore": "Clean dishwasher",
+          "score": 4,
+          "time_estimate": 25
+        }
+      ]
+    },
+    "Saturday": {
+      "Charlie": [
+        {
           "chore": "Water plants",
           "score": 1,
           "time_estimate": 12
         },
         {
-          "chore": "Prepare dinner",
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        },
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ],
+      "Dana": [
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        },
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        },
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ]
+    },
+    "Tuesday": {
+      "Dana": [
+        {
+          "chore": "Clean toilets",
+          "score": 3,
+          "time_estimate": 15
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        },
+        {
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
         }
       ],
+      "Alice": [
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ]
+    },
+    "Thursday": {
       "Charlie": [
         {
           "chore": "Vacuum floors/carpets",
@@ -975,198 +1298,55 @@
       ],
       "Alice": [
         {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        },
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ]
-    },
-    "Wednesday": {
-      "Bob": [
-        {
-          "chore": "Take trash to curb",
-          "score": 1,
-          "time_estimate": 5,
-          "dayofweek": "Wednesday"
-        },
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Check expired foods",
-          "score": 3,
-          "time_estimate": 15,
-          "dayofweek": "Wednesday"
-        },
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        }
-      ],
-      "Dana": [
-        {
-          "chore": "Scrub showers/bathtubs",
-          "score": 6,
-          "time_estimate": 35
-        },
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        },
-        {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ]
-    },
-    "Sunday": {
-      "Bob": [
-        {
-          "chore": "Meal planning",
-          "score": 4,
-          "time_estimate": 30,
-          "dayofweek": "Sunday"
-        },
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Wipe down doors/handles",
-          "score": 2,
-          "time_estimate": 15
-        }
-      ],
-      "Dana": [
-        {
           "chore": "Mop hard floors",
           "score": 5,
           "time_estimate": 30
         },
         {
-          "chore": "Wash pots & pans",
+          "chore": "Bake bread",
           "score": 2,
-          "time_estimate": 10
-        },
-        {
-          "chore": "Clean dishwasher",
-          "score": 4,
-          "time_estimate": 25
+          "time_estimate": 6
         }
       ],
-      "Alice": [
+      "Dana": [
         {
-          "chore": "Clean mirrors",
-          "score": 2,
-          "time_estimate": 8
-        },
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        },
-        {
-          "chore": "Clean light fixtures",
-          "score": 3,
-          "time_estimate": 20
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
         },
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        }
+      ],
+      "Bob": [
         {
           "chore": "Tidy porch/hallways",
           "score": 3,
           "time_estimate": 12
         },
         {
-          "chore": "Clean washing machine",
-          "score": 4,
-          "time_estimate": 30
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
         }
       ],
       "Eli": [
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        },
         {
           "chore": "Tidy living areas",
           "score": 3,
           "time_estimate": 12
         },
         {
-          "chore": "Vacuum upholstery",
-          "score": 3,
-          "time_estimate": 20
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
         }
       ]
     },
-    "Tuesday": {
-      "Dana": [
-        {
-          "chore": "Yard work",
-          "score": 7,
-          "time_estimate": 40
-        },
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ],
+    "Friday": {
       "Charlie": [
         {
           "chore": "Dust surfaces",
@@ -1174,21 +1354,9 @@
           "time_estimate": 20
         },
         {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Change bed sheets",
-          "score": 2,
-          "time_estimate": 10
-        },
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
         }
       ],
       "Bob": [
@@ -1199,47 +1367,7 @@
           "required_daily": true
         },
         {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ]
-    },
-    "Thursday": {
-      "Bob": [
-        {
-          "chore": "Clean toilets",
-          "score": 3,
-          "time_estimate": 15
-        },
-        {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
@@ -1252,161 +1380,33 @@
           "time_estimate": 6
         },
         {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
-          "chore": "Tidy living areas",
+          "chore": "Tidy porch/hallways",
           "score": 3,
           "time_estimate": 12
         }
       ],
       "Dana": [
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        },
         {
           "chore": "Wipe kitchen counters",
           "score": 1,
           "time_estimate": 5
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ]
-    },
-    "Friday": {
-      "Alice": [
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
         }
       ],
-      "Bob": [
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        },
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ],
-      "Dana": [
+      "Eli": [
         {
           "chore": "Wash pots & pans",
           "score": 2,
           "time_estimate": 10
         },
         {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        },
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ]
-    },
-    "Saturday": {
-      "Alice": [
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
-        }
-      ],
-      "Charlie": [
-        {
           "chore": "Laundry sorting",
           "score": 1,
           "time_estimate": 5
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ],
-      "Dana": [
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        },
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
         }
       ]
     }
@@ -1421,42 +1421,16 @@
           "dayofweek": "Monday"
         },
         {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Scrub showers/bathtubs",
-          "score": 6,
-          "time_estimate": 35
-        },
-        {
-          "chore": "Wash pots & pans",
+          "chore": "Bake bread",
           "score": 2,
-          "time_estimate": 10
+          "time_estimate": 6
         }
       ],
       "Eli": [
         {
-          "chore": "Clean toilets",
-          "score": 3,
-          "time_estimate": 15
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Water plants",
-          "score": 1,
-          "time_estimate": 12
+          "chore": "Clean mirrors",
+          "score": 2,
+          "time_estimate": 8
         },
         {
           "chore": "Quick bathroom wipe-down",
@@ -1466,14 +1440,40 @@
       ],
       "Alice": [
         {
-          "chore": "Tidy living areas",
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Tidy porch/hallways",
           "score": 3,
           "time_estimate": 12
         },
         {
-          "chore": "Sweep/vacuum high-traffic areas",
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Wash pots & pans",
           "score": 2,
-          "time_estimate": 8
+          "time_estimate": 10
+        },
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
         }
       ]
     },
@@ -1486,9 +1486,10 @@
           "dayofweek": "Wednesday"
         },
         {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
         }
       ],
       "Bob": [
@@ -1499,193 +1500,12 @@
           "dayofweek": "Wednesday"
         },
         {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        },
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        }
-      ]
-    },
-    "Sunday": {
-      "Charlie": [
-        {
-          "chore": "Meal planning",
-          "score": 4,
-          "time_estimate": 30,
-          "dayofweek": "Sunday"
-        },
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Tidy living areas",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
-        }
-      ],
-      "Dana": [
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Eli": [
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
           "chore": "Tidy porch/hallways",
           "score": 3,
           "time_estimate": 12
         }
-      ]
-    },
-    "Thursday": {
-      "Charlie": [
-        {
-          "chore": "Mop hard floors",
-          "score": 5,
-          "time_estimate": 30
-        },
-        {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
-        }
-      ],
-      "Alice": [
-        {
-          "chore": "Dust surfaces",
-          "score": 3,
-          "time_estimate": 20
-        },
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
       ],
       "Eli": [
-        {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Tidy porch/hallways",
-          "score": 3,
-          "time_estimate": 12
-        },
-        {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Dana": [
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        },
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ]
-    },
-    "Saturday": {
-      "Charlie": [
-        {
-          "chore": "Clean mirrors",
-          "score": 2,
-          "time_estimate": 8
-        },
-        {
-          "chore": "Laundry sorting",
-          "score": 1,
-          "time_estimate": 5
-        }
-      ],
-      "Dana": [
         {
           "chore": "Change bed sheets",
           "score": 2,
@@ -1705,29 +1525,145 @@
           "required_daily": true
         },
         {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
         }
       ],
-      "Bob": [
-        {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
-        },
+      "Charlie": [
         {
           "chore": "Quick bathroom wipe-down",
           "score": 2,
           "time_estimate": 6
+        },
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
         }
-      ],
+      ]
+    },
+    "Sunday": {
       "Eli": [
         {
-          "chore": "Pick up mail",
+          "chore": "Meal planning",
           "score": 4,
-          "time_estimate": 20
+          "time_estimate": 30,
+          "dayofweek": "Sunday"
+        },
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Scrub showers/bathtubs",
+          "score": 6,
+          "time_estimate": 35
+        },
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Dana": [
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ]
+    },
+    "Friday": {
+      "Eli": [
+        {
+          "chore": "Mop hard floors",
+          "score": 5,
+          "time_estimate": 30
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Yard work",
+          "score": 7,
+          "time_estimate": 40
+        },
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        },
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Charlie": [
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
+        },
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Dana": [
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
         },
         {
           "chore": "Bake bread",
@@ -1736,12 +1672,12 @@
         }
       ]
     },
-    "Tuesday": {
-      "Alice": [
+    "Thursday": {
+      "Dana": [
         {
-          "chore": "Vacuum floors/carpets",
-          "score": 4,
-          "time_estimate": 25
+          "chore": "Water plants",
+          "score": 1,
+          "time_estimate": 12
         },
         {
           "chore": "Quick bathroom wipe-down",
@@ -1749,19 +1685,7 @@
           "time_estimate": 6
         }
       ],
-      "Dana": [
-        {
-          "chore": "Yard work",
-          "score": 7,
-          "time_estimate": 40
-        },
-        {
-          "chore": "Sweep/vacuum high-traffic areas",
-          "score": 2,
-          "time_estimate": 8
-        }
-      ],
-      "Eli": [
+      "Charlie": [
         {
           "chore": "Load/unload dishwasher",
           "score": 1,
@@ -1769,25 +1693,25 @@
           "required_daily": true
         },
         {
-          "chore": "Prepare dinner",
+          "chore": "Food/meal prep",
           "score": 5,
           "time_estimate": 45,
           "required_daily": true
         }
       ],
-      "Bob": [
+      "Alice": [
         {
-          "chore": "Wipe kitchen counters",
-          "score": 1,
-          "time_estimate": 5
+          "chore": "Tidy living areas",
+          "score": 3,
+          "time_estimate": 12
         },
         {
-          "chore": "Wash pots & pans",
+          "chore": "Bake bread",
           "score": 2,
-          "time_estimate": 10
+          "time_estimate": 6
         }
       ],
-      "Charlie": [
+      "Bob": [
         {
           "chore": "Laundry sorting",
           "score": 1,
@@ -1798,40 +1722,26 @@
           "score": 3,
           "time_estimate": 12
         }
+      ],
+      "Eli": [
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        }
       ]
     },
-    "Friday": {
-      "Alice": [
+    "Saturday": {
+      "Dana": [
         {
-          "chore": "Load/unload dishwasher",
-          "score": 1,
-          "time_estimate": 4,
-          "required_daily": true
-        },
-        {
-          "chore": "Prepare dinner",
-          "score": 5,
-          "time_estimate": 45,
-          "required_daily": true
-        }
-      ],
-      "Bob": [
-        {
-          "chore": "Bake bread",
-          "score": 2,
-          "time_estimate": 6
-        },
-        {
-          "chore": "Quick bathroom wipe-down",
-          "score": 2,
-          "time_estimate": 6
-        }
-      ],
-      "Charlie": [
-        {
-          "chore": "Wash pots & pans",
-          "score": 2,
-          "time_estimate": 10
+          "chore": "Dust surfaces",
+          "score": 3,
+          "time_estimate": 20
         },
         {
           "chore": "Tidy living areas",
@@ -1839,11 +1749,89 @@
           "time_estimate": 12
         }
       ],
+      "Charlie": [
+        {
+          "chore": "Vacuum floors/carpets",
+          "score": 4,
+          "time_estimate": 25
+        },
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        },
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Laundry sorting",
+          "score": 1,
+          "time_estimate": 5
+        },
+        {
+          "chore": "Tidy porch/hallways",
+          "score": 3,
+          "time_estimate": 12
+        }
+      ],
+      "Eli": [
+        {
+          "chore": "Sweep/vacuum high-traffic areas",
+          "score": 2,
+          "time_estimate": 8
+        },
+        {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ]
+    },
+    "Tuesday": {
       "Dana": [
         {
-          "chore": "Pick up mail",
-          "score": 4,
-          "time_estimate": 20
+          "chore": "Clean toilets",
+          "score": 3,
+          "time_estimate": 15
+        },
+        {
+          "chore": "Load/unload dishwasher",
+          "score": 1,
+          "time_estimate": 4,
+          "required_daily": true
+        }
+      ],
+      "Bob": [
+        {
+          "chore": "Food/meal prep",
+          "score": 5,
+          "time_estimate": 45,
+          "required_daily": true
+        },
+        {
+          "chore": "Wipe kitchen counters",
+          "score": 1,
+          "time_estimate": 5
+        }
+      ],
+      "Alice": [
+        {
+          "chore": "Bake bread",
+          "score": 2,
+          "time_estimate": 6
         },
         {
           "chore": "Laundry sorting",
@@ -1851,16 +1839,28 @@
           "time_estimate": 5
         }
       ],
-      "Eli": [
+      "Charlie": [
         {
           "chore": "Tidy porch/hallways",
           "score": 3,
           "time_estimate": 12
         },
         {
+          "chore": "Wash pots & pans",
+          "score": 2,
+          "time_estimate": 10
+        }
+      ],
+      "Eli": [
+        {
           "chore": "Sweep/vacuum high-traffic areas",
           "score": 2,
           "time_estimate": 8
+        },
+        {
+          "chore": "Quick bathroom wipe-down",
+          "score": 2,
+          "time_estimate": 6
         }
       ]
     }

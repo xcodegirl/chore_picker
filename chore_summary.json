@@ -2,141 +2,141 @@
   "Alice": {
     "weeks": {
       "Week 1": {
-        "score": 45,
-        "time": 308
+        "score": 34,
+        "time": 170
       },
       "Week 2": {
-        "score": 33,
-        "time": 145
+        "score": 34,
+        "time": 233
       },
       "Week 3": {
-        "score": 37,
-        "time": 212
+        "score": 41,
+        "time": 230
       },
       "Week 4": {
-        "score": 39,
-        "time": 246
+        "score": 35,
+        "time": 211
       }
     },
     "month": {
-      "score": 154,
-      "time": 911
+      "score": 144,
+      "time": 844
     },
     "two_months": {
-      "score": 154,
-      "time": 911
+      "score": 144,
+      "time": 844
     }
   },
   "Bob": {
     "weeks": {
       "Week 1": {
-        "score": 50,
-        "time": 283
+        "score": 36,
+        "time": 188
       },
       "Week 2": {
-        "score": 36,
-        "time": 169
+        "score": 37,
+        "time": 222
       },
       "Week 3": {
-        "score": 39,
-        "time": 247
+        "score": 37,
+        "time": 214
       },
       "Week 4": {
         "score": 39,
-        "time": 212
+        "time": 227
       }
     },
     "month": {
-      "score": 164,
-      "time": 911
+      "score": 149,
+      "time": 851
     },
     "two_months": {
-      "score": 164,
-      "time": 911
+      "score": 149,
+      "time": 851
     }
   },
   "Charlie": {
     "weeks": {
       "Week 1": {
-        "score": 42,
-        "time": 242
+        "score": 44,
+        "time": 297
       },
       "Week 2": {
-        "score": 41,
-        "time": 236
+        "score": 39,
+        "time": 233
       },
       "Week 3": {
-        "score": 38,
-        "time": 208
+        "score": 34,
+        "time": 171
       },
       "Week 4": {
-        "score": 43,
-        "time": 225
+        "score": 34,
+        "time": 182
       }
     },
     "month": {
-      "score": 164,
-      "time": 911
+      "score": 151,
+      "time": 883
     },
     "two_months": {
-      "score": 164,
-      "time": 911
+      "score": 151,
+      "time": 883
     }
   },
   "Dana": {
     "weeks": {
       "Week 1": {
-        "score": 38,
-        "time": 183
+        "score": 39,
+        "time": 255
       },
       "Week 2": {
-        "score": 40,
-        "time": 225
+        "score": 31,
+        "time": 152
       },
       "Week 3": {
-        "score": 52,
-        "time": 315
+        "score": 38,
+        "time": 272
       },
       "Week 4": {
-        "score": 31,
-        "time": 189
+        "score": 32,
+        "time": 206
       }
     },
     "month": {
-      "score": 161,
-      "time": 912
+      "score": 140,
+      "time": 885
     },
     "two_months": {
-      "score": 161,
-      "time": 912
+      "score": 140,
+      "time": 885
     }
   },
   "Eli": {
     "weeks": {
       "Week 1": {
-        "score": 33,
-        "time": 233
+        "score": 48,
+        "time": 288
       },
       "Week 2": {
-        "score": 37,
-        "time": 300
+        "score": 32,
+        "time": 161
       },
       "Week 3": {
-        "score": 32,
-        "time": 182
+        "score": 40,
+        "time": 226
       },
       "Week 4": {
-        "score": 33,
-        "time": 197
+        "score": 32,
+        "time": 171
       }
     },
     "month": {
-      "score": 135,
-      "time": 912
+      "score": 152,
+      "time": 846
     },
     "two_months": {
-      "score": 135,
-      "time": 912
+      "score": 152,
+      "time": 846
     }
   }
 }

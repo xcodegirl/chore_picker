@@ -44,6 +44,9 @@ html = ['<html>', '<head><title>Chore Schedule</title>',
 html.append('<h1>Monthly Chore Schedule</h1>')
 
 for week, week_data in schedule.items():
+    # Add a page break before each week except the first
+    if week != list(schedule.keys())[0]:
+        html.append('<div style="page-break-before: always;"></div>')
     html.append(f'<div class="week-title">{week}</div>')
     html.append('<table>')
     html.append('<tr><th>Day</th>' + ''.join(f'<th>{person}</th>' for person in people) + '</tr>')
@@ -76,6 +79,7 @@ for week, week_data in schedule.items():
     html.append('</table>')
 
 # Chore summary section
+html.append('<div style="page-break-before: always;"></div>')
 html.append('<h2>Chore Summary</h2>')
 html.append('<table>')
 html.append('<tr><th>Person</th><th>Week</th><th>Total Score</th><th>Total Time</th></tr>')

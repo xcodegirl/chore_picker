@@ -9,9 +9,8 @@
       {"chore": "Load/unload dishwasher", "score": 1, "time_estimate": 4, "required_daily": true},
       {"chore": "Tidy living areas", "score": 3, "time_estimate": 12},
       {"chore": "Laundry sorting", "score": 1, "time_estimate": 5},
-      {"chore": "Prepare dinner", "score": 5, "time_estimate": 45, "required_daily": true},
-      {"chore": "Bake bread", "score": 2, "time_estimate": 6},
-      {"chore": "Pick up mail", "score": 4, "time_estimate": 20}
+      {"chore": "Food/meal prep", "score": 5, "time_estimate": 45, "required_daily": true},
+      {"chore": "Bake bread", "score": 2, "time_estimate": 6}
     ],
     "weekly": [
       {"chore": "Vacuum floors/carpets", "score": 4, "time_estimate": 25},
