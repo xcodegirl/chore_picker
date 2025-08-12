@@ -88,3 +88,6 @@ Include/
 *.msi
 *.com
 *.ps1
+chore_schedule.html
+chore_schedule.json
+chore_summary.json
