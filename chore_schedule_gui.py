@@ -8,7 +8,7 @@ class ChoreScheduleGUI(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Chore Schedule Generator")
-        self.geometry("400x440")
+        self.geometry("400x700")  # Increased height from 440 to 700
         self.resizable(False, False)
 
         # Load people from people.json if available
@@ -60,7 +60,7 @@ class ChoreScheduleGUI(tk.Tk):
         # Output
         self.output_label = tk.Label(self, text="", fg="green", wraplength=360, justify='center')
         self.output_label.pack(pady=5)
-        self.output_text = tk.Text(self, height=10, width=48, wrap='word', state='disabled')
+        self.output_text = tk.Text(self, height=18, width=48, wrap='word', state='disabled')
         self.output_text.pack(pady=5)
 
     def generate_schedule(self):
