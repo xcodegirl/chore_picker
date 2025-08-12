@@ -18,7 +18,7 @@ with open('chore_summary.json', 'r') as f:
     summary = json.load(f)
 
 # Always use hardcoded people list
-people = ['Alice', 'Bob', 'Charlie', 'Dana', 'Eli']
+people = ['Archimedes', 'Ricardo', 'Curia', 'Joanne', 'Hypatia']
 
 # Build lookup for required chores and type
 chore_type = {}
@@ -70,7 +70,13 @@ for week, week_data in schedule.items():
                         ctype_class = 'monthly'
                     if chore['chore'] in required_daily or chore['chore'] in required_weekly or chore['chore'] in required_monthly:
                         req = ' <span class="required">(*)</span>'
-                    desc += f"<li><b>{chore['chore']}</b>{req}<br><span class='chore-type {ctype_class}'>{ctype} &ndash; {chore['time_estimate']} min</span></li>"
+                    # Print score after time estimate
+                    desc += (
+                        f"<li><b>{chore['chore']}</b>{req}<br>"
+                        f"<span class='chore-type {ctype_class}'>"
+                        f"{ctype} &ndash; {chore['time_estimate']} min &ndash; Difficulty {chore['score']}"
+                        f"</span></li>"
+                    )
                 desc += '</ul>'
             else:
                 desc = ''

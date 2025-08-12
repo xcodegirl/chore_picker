@@ -469,24 +469,3 @@ if score_diff <= FAIR_SCORE_DIFF and time_diff <= FAIR_TIME_DIFF:
     print('  The schedule is FAIR: score and time are well balanced across all people.')
 else:
     print('  The schedule is NOT FAIR: consider re-running or adjusting logic for better balance.')
-
-# Check for back-to-back same chore assignments for each person
-back_to_back_issues = []
-for person in people:
-    for week in range(1, weeks+1):
-        prev_chore = None
-        for day in days:
-            chores = schedule[f'Week {week}'][day].get(person, [])
-            for chore in chores:
-                chore_name = chore['chore'] if isinstance(chore, dict) else str(chore)
-                if prev_chore == chore_name:
-                    back_to_back_issues.append((person, week, day, chore_name))
-                prev_chore = chore_name
-
-if back_to_back_issues:
-    print('WARNING: Back-to-back same chore assignments found:')
-    for issue in back_to_back_issues:
-        person, week, day, chore_name = issue
-        print(f'  {person} assigned "{chore_name}" on consecutive days in {week}, {day}')
-else:
-    print('No back-to-back same chore assignments found for any person.')

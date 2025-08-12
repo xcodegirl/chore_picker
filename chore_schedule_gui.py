@@ -17,7 +17,7 @@ class ChoreScheduleGUI(tk.Tk):
             with open("people.json", "r") as pf:
                 self.default_names = json.load(pf)
         except Exception:
-            self.default_names = ['Alice', 'Bob', 'Charlie', 'Dana', 'Eli']
+            self.default_names = ['Archimedes', 'Ricardo', 'Curia', 'Joanne', 'Hypatia']
 
         # People checkboxes
         tk.Label(self, text="Include these people:").pack(pady=(20, 5))
