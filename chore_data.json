@@ -4,7 +4,7 @@
       { "chore": "Tidy porch/hallways", "score": 3, "time_estimate": 12 },
       { "chore": "Wash pots & pans", "score": 2, "time_estimate": 10 },
       { "chore": "Tidy kitchen/dining", "score": 1, "time_estimate": 5 },
-      { "chore": "Sweep/vacuum high-traffic areas", "score": 2, "time_estimate": 8 },
+      { "chore": "Sweep high-traffic areas", "score": 2, "time_estimate": 8 },
       { "chore": "Quick bathroom wipe-down", "score": 2, "time_estimate": 6 },
       { "chore": "Load/unload dishwasher", "score": 1, "time_estimate": 4, "required_daily": true },
       { "chore": "Tidy living areas", "score": 3, "time_estimate": 12 },
@@ -15,49 +15,18 @@
     "weekly": [
       { "chore": "Vacuum floors/carpets", "score": 4, "time_estimate": 25 },
       { "chore": "Mop hard floors", "score": 5, "time_estimate": 30 },
-      { "chore": "Clean toilets", "score": 3, "time_estimate": 15 },
+      { "chore": "Clean toilets, mirrors, sinks", "score": 3, "time_estimate": 15 },
       { "chore": "Scrub showers/bathtubs", "score": 6, "time_estimate": 35 },
-      { "chore": "Change bed sheets", "score": 2, "time_estimate": 10 },
       { "chore": "Dust surfaces", "score": 3, "time_estimate": 20 },
-      { "chore": "Water plants", "score": 1, "time_estimate": 12 },
+      { "chore": "Water plants", "score": 1, "time_estimate": 12, "dayofweek": "Friday"},
       { "chore": "Grocery shopping", "score": 5, "time_estimate": 75, "dayofweek": "Monday" },
       { "chore": "Take trash to curb", "score": 1, "time_estimate": 5, "dayofweek": "Wednesday" },
       { "chore": "Check expired foods", "score": 3, "time_estimate": 15, "dayofweek": "Wednesday" },
       { "chore": "Meal planning", "score": 4, "time_estimate": 30, "dayofweek": "Sunday" },
-      { "chore": "Yard work", "score": 7, "time_estimate": 40 }
-    ],
-    "monthly": [
+      { "chore": "Yard work", "score": 7, "time_estimate": 40 },
       { "chore": "Clean refrigerator interior", "score": 6, "time_estimate": 45 },
       { "chore": "Wipe down kitchen cabinets", "score": 4, "time_estimate": 30 },
-      { "chore": "Clean oven/microwave", "score": 7, "time_estimate": 50 },
-      { "chore": "Dust baseboards", "score": 4, "time_estimate": 25 },
-      { "chore": "Wash windows", "score": 5, "time_estimate": 40 },
-      { "chore": "Clean light fixtures", "score": 3, "time_estimate": 20 },
-      { "chore": "Wipe down doors/handles", "score": 2, "time_estimate": 15 },
-      { "chore": "Clean washing machine", "score": 4, "time_estimate": 30 },
-      { "chore": "Clean dishwasher", "score": 4, "time_estimate": 25 },
-      { "chore": "Vacuum upholstery", "score": 3, "time_estimate": 20 }
-    ],
-    "bi-yearly": [
-      { "chore": "Wash curtains/drapes", "score": 5, "time_estimate": 60 },
-      { "chore": "Wipe down walls", "score": 7, "time_estimate": 90 },
-      { "chore": "Clean behind appliances", "score": 7, "time_estimate": 75 },
-      { "chore": "Organize pantry", "score": 5, "time_estimate": 60 },
-      { "chore": "Flip/clean mattresses", "score": 4, "time_estimate": 15 },
-      { "chore": "Clean air vents", "score": 6, "time_estimate": 50 },
-      { "chore": "Deep clean inside kitchen cupboards", "score": 8, "time_estimate": 120 },
-      { "chore": "Declutter storage areas", "score": 8, "time_estimate": 120 }
-    ],
-    "yearly": [
-      { "chore": "Clean chimney", "score": 10, "time_estimate": 240 },
-      { "chore": "Gutter cleaning", "score": 9, "time_estimate": 180 },
-      { "chore": "Power wash house exterior", "score": 8, "time_estimate": 150 },
-      { "chore": "Deep clean attic/basement", "score": 9, "time_estimate": 240 },
-      { "chore": "Window screen cleaning", "score": 5, "time_estimate": 60 },
-      { "chore": "Clean dryer vent", "score": 7, "time_estimate": 90 },
-      { "chore": "Wash exterior windows", "score": 7, "time_estimate": 150 },
-      { "chore": "Organize important documents", "score": 4, "time_estimate": 60 },
-      { "chore": "Service HVAC system", "score": 8, "time_estimate": 90 }
+      { "chore": "Clean microwave", "score": 7, "time_estimate": 50 }
     ]
   }
 }

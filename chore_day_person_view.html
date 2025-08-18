@@ -32,7 +32,12 @@
     <label>Day:
       <select id="day"></select>
     </label>
-    <button onclick="updateView()">Show</button>
+    <button onclick="updateView()">Show Day</button>
+    <button onclick="showFullWeek()">Show Full Week</button>
+    <label style="margin-left:1em;">
+      <input type="checkbox" id="highlightToggle" checked>
+      Highlight chore types
+    </label>
   </div>
   <div id="output"></div>
   <script>
@@ -83,6 +88,9 @@
       if (getChoreType(chore) === 'monthly') labels.push('<span class="label" style="background:#388e3c;color:#fff">Monthly</span>');
       return labels.join(' ');
     }
+    function getHighlightClass(ctype) {
+      return document.getElementById('highlightToggle').checked ? ctype : '';
+    }
     function updateView() {
       if (!schedule) { document.getElementById('output').innerHTML = '<div class="none">Schedule not loaded.</div>'; return; }
       const person = document.getElementById('person').value;
@@ -97,10 +105,9 @@
       if (!chores.length) {
         html += '<div class="none">No chores assigned for this day.</div>';
       } else {
-        html += '<table><tr><th>Chore</th><th>Type</th><th>Time (min)</th><th>Score</th></tr>';
+        html += '<ul>';
         chores.forEach(chore => {
           let c = chore;
-          // If string, try to look up details
           if (typeof c === 'string' && choreData) {
             let found = null;
             ['daily','weekly','monthly'].forEach(type => {
@@ -110,15 +117,59 @@
             else c = { chore: c };
           }
           const ctype = getChoreType(c);
-          const rowClass = ctype;
-          html += `<tr class="${rowClass}"><td>${c.chore} ${getLabels(c)}</td><td>${ctype.charAt(0).toUpperCase()+ctype.slice(1)}</td><td>${c.time_estimate||''}</td><td>${c.score||''}</td></tr>`;
+          html += `<li class="${getHighlightClass(ctype)}"><b>${c.chore}</b> ${getLabels(c)} <span style="color:#888;">(${ctype.charAt(0).toUpperCase()+ctype.slice(1)})</span></li>`;
         });
-        html += '</table>';
+        html += '</ul>';
       }
+      document.getElementById('output').innerHTML = html;
+    }
+    function showFullWeek() {
+      if (!schedule) {
+        document.getElementById('output').innerHTML = '<div class="none">Schedule not loaded.</div>';
+        return;
+      }
+      const person = document.getElementById('person').value;
+      const week = document.getElementById('week').value;
+      const weekKey = 'Week ' + week;
+      let html = `<h2>${person} — Full Week (${week})</h2>`;
+      DAYS.forEach(day => {
+        let chores = [];
+        if (schedule[weekKey] && schedule[weekKey][day] && schedule[weekKey][day][person]) {
+          chores = schedule[weekKey][day][person];
+        }
+        html += `<h3>${day}</h3>`;
+        if (chores.length) {
+          html += '<ul>';
+          chores.forEach(chore => {
+            let c = chore;
+            if (typeof c === 'string' && choreData) {
+              let found = null;
+              ['daily','weekly','monthly'].forEach(type => {
+                if (!found) found = choreData.household_chores[type].find(ch => ch.chore === c);
+              });
+              if (found) c = found;
+              else c = { chore: c };
+            }
+            const ctype = getChoreType(c);
+            html += `<li class="${getHighlightClass(ctype)}"><b>${c.chore}</b> ${getLabels(c)} <span style="color:#888;">(${ctype.charAt(0).toUpperCase()+ctype.slice(1)})</span></li>`;
+          });
+          html += '</ul>';
+        } else {
+          html += `<div class="none">No chores assigned</div>`;
+        }
+      });
       document.getElementById('output').innerHTML = html;
     }
     // Show initial view after both files load
     setTimeout(updateView, 500);
+    document.getElementById('highlightToggle').addEventListener('change', function() {
+      // Refresh view when toggled
+      if (document.getElementById('output').innerHTML.includes('Full Week')) {
+        showFullWeek();
+      } else {
+        updateView();
+      }
+    });
   </script>
 </body>
 </html>

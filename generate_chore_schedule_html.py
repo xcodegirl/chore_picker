@@ -49,10 +49,11 @@ for week, week_data in schedule.items():
         html.append('<div style="page-break-before: always;"></div>')
     html.append(f'<div class="week-title">{week}</div>')
     html.append('<table>')
-    html.append('<tr><th>Day</th>' + ''.join(f'<th>{person}</th>' for person in people) + '</tr>')
-    for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
-        html.append(f'<tr><td>{day}</td>')
-        for person in people:
+    # Header row: Days
+    html.append('<tr><th>Person</th>' + ''.join(f'<th>{day}</th>' for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']) + '</tr>')
+    for person in people:
+        html.append(f'<tr><td>{person}</td>')
+        for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
             chores = week_data.get(day, {}).get(person, [])
             if not isinstance(chores, list):
                 chores = [chores]
@@ -70,11 +71,10 @@ for week, week_data in schedule.items():
                         ctype_class = 'monthly'
                     if chore['chore'] in required_daily or chore['chore'] in required_weekly or chore['chore'] in required_monthly:
                         req = ' <span class="required">(*)</span>'
-                    # Print score after time estimate
                     desc += (
                         f"<li><b>{chore['chore']}</b>{req}<br>"
                         f"<span class='chore-type {ctype_class}'>"
-                        f"{ctype} &ndash; {chore['time_estimate']} min &ndash; Difficulty {chore['score']}"
+                        f"{ctype}"
                         f"</span></li>"
                     )
                 desc += '</ul>'
@@ -83,18 +83,6 @@ for week, week_data in schedule.items():
             html.append(f'<td>{desc}</td>')
         html.append('</tr>')
     html.append('</table>')
-
-# Chore summary section
-html.append('<div style="page-break-before: always;"></div>')
-html.append('<h2>Chore Summary</h2>')
-html.append('<table>')
-html.append('<tr><th>Person</th><th>Week</th><th>Total Score</th><th>Total Time</th></tr>')
-for person, pdata in summary.items():
-    for week, wdata in pdata['weeks'].items():
-        html.append(f'<tr><td>{person}</td><td>{week}</td><td>{wdata["score"]}</td><td>{min_to_hrmin(wdata["time"])}</td></tr>')
-    # Monthly total row (first 4 weeks)
-    html.append(f'<tr style="font-weight:bold;"><td>{person}</td><td>Month</td><td>{pdata["month"]["score"]}</td><td>{min_to_hrmin(pdata["month"]["time"])}</td></tr>')
-html.append('</table>')
 
 html.append('</body></html>')
 

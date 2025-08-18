@@ -68,20 +68,10 @@ class ChoreScheduleGUI(tk.Tk):
         if len(people) < 2:
             messagebox.showerror("Too few people", "Please select at least two people.")
             return
-        import tempfile, json
-        with tempfile.NamedTemporaryFile('w', delete=False, suffix='.json') as tf:
-            json.dump(people, tf)
-            tf.flush()
-            tfname = tf.name
-        # Get fairness thresholds from GUI
-        fair_score = str(self.fair_score_var.get())
-        fair_time = str(self.fair_time_var.get())
         chore_capacity = str(self.chore_capacity_var.get())
-        # First, generate the schedule JSON
+        # Only pass used parameters to CLI
         cmd1 = [sys.executable, 'generate_chore_schedule.py',
-                '--fair-score-diff', fair_score, '--fair-time-diff', fair_time,
                 '--chore-capacity', chore_capacity]
-        # Then, generate the HTML
         cmd2 = [sys.executable, 'generate_chore_schedule_html.py']
         try:
             result1 = subprocess.run(cmd1, capture_output=True, text=True, check=True)
@@ -93,8 +83,6 @@ class ChoreScheduleGUI(tk.Tk):
             output = e.stdout or ''
             if e.stderr:
                 output += '\n' + e.stderr
-        finally:
-            os.unlink(tfname)
         self.output_text.config(state='normal')
         self.output_text.delete(1.0, tk.END)
         self.output_text.insert(tk.END, output.strip())
