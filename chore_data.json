@@ -2,31 +2,30 @@
   "household_chores": {
     "daily": [
       { "chore": "Tidy porch/hallways", "score": 3, "time_estimate": 12 },
-      { "chore": "Wash pots & pans", "score": 2, "time_estimate": 10 },
       { "chore": "Tidy kitchen/dining", "score": 1, "time_estimate": 5 },
       { "chore": "Sweep high-traffic areas", "score": 2, "time_estimate": 8 },
-      { "chore": "Quick bathroom wipe-down", "score": 2, "time_estimate": 6 },
-      { "chore": "Load/unload dishwasher", "score": 1, "time_estimate": 4, "required_daily": true },
+      { "chore": "Tidy bathrooms", "score": 2, "time_estimate": 6 },
       { "chore": "Tidy living areas", "score": 3, "time_estimate": 12 },
-      { "chore": "Laundry sorting", "score": 1, "time_estimate": 5 },
-      { "chore": "Food/meal prep", "score": 5, "time_estimate": 45, "required_daily": true },
-      { "chore": "Bake bread", "score": 2, "time_estimate": 6 }
+      { "chore": "Laundry", "score": 1, "time_estimate": 5 },
+      { "chore": "Bake bread", "score": 2, "time_estimate": 6 },
+      { "chore": "Snack prep", "score": 2, "time_estimate": 6 },
+      { "chore": "Chore X", "score": 2, "time_estimate": 6 },
+      { "chore": "Empty garbages", "score": 2, "time_estimate": 6 },
+      { "chore": "Dishes", "score": 1, "time_estimate": 4, "required_daily": true },
+      { "chore": "Dinner", "score": 5, "time_estimate": 45, "required_daily": true }
     ],
     "weekly": [
-      { "chore": "Vacuum floors/carpets", "score": 4, "time_estimate": 25 },
+      { "chore": "Vacuum floors/rugs", "score": 4, "time_estimate": 25 },
       { "chore": "Mop hard floors", "score": 5, "time_estimate": 30 },
-      { "chore": "Clean toilets, mirrors, sinks", "score": 3, "time_estimate": 15 },
-      { "chore": "Scrub showers/bathtubs", "score": 6, "time_estimate": 35 },
+      { "chore": "Scrub bathrooms", "score": 3, "time_estimate": 15 },
       { "chore": "Dust surfaces", "score": 3, "time_estimate": 20 },
-      { "chore": "Water plants", "score": 1, "time_estimate": 12, "dayofweek": "Friday"},
-      { "chore": "Grocery shopping", "score": 5, "time_estimate": 75, "dayofweek": "Monday" },
-      { "chore": "Take trash to curb", "score": 1, "time_estimate": 5, "dayofweek": "Wednesday" },
-      { "chore": "Check expired foods", "score": 3, "time_estimate": 15, "dayofweek": "Wednesday" },
-      { "chore": "Meal planning", "score": 4, "time_estimate": 30, "dayofweek": "Sunday" },
       { "chore": "Yard work", "score": 7, "time_estimate": 40 },
       { "chore": "Clean refrigerator interior", "score": 6, "time_estimate": 45 },
-      { "chore": "Wipe down kitchen cabinets", "score": 4, "time_estimate": 30 },
-      { "chore": "Clean microwave", "score": 7, "time_estimate": 50 }
+      { "chore": "Scrub kitchen", "score": 4, "time_estimate": 30 },
+      { "chore": "Water plants", "score": 1, "time_estimate": 12},
+      { "chore": "Meal planning", "score": 4, "time_estimate": 30 },
+      { "chore": "Chore Y", "score": 4, "time_estimate": 30 }
+
     ]
   }
 }

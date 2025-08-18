@@ -1,4 +1,5 @@
 import json
+import datetime
 
 def min_to_hrmin(minutes):
     h = minutes // 60
@@ -19,6 +20,8 @@ with open('chore_summary.json', 'r') as f:
 
 # Always use hardcoded people list
 people = ['Archimedes', 'Ricardo', 'Curia', 'Joanne', 'Hypatia']
+
+start_day = datetime.datetime.now()
 
 # Build lookup for required chores and type
 chore_type = {}
@@ -47,8 +50,10 @@ for week, week_data in schedule.items():
     # Add a page break before each week except the first
     if week != list(schedule.keys())[0]:
         html.append('<div style="page-break-before: always;"></div>')
-    html.append(f'<div class="week-title">{week}</div>')
+    html.append(f'<div class="week-title">{week}: {start_day.strftime("%B %d")}</div>')
+    start_day += datetime.timedelta(days=7)
     html.append('<table>')
+
     # Header row: Days
     html.append('<tr><th>Person</th>' + ''.join(f'<th>{day}</th>' for day in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']) + '</tr>')
     for person in people:
@@ -73,9 +78,7 @@ for week, week_data in schedule.items():
                         req = ' <span class="required">(*)</span>'
                     desc += (
                         f"<li><b>{chore['chore']}</b>{req}<br>"
-                        f"<span class='chore-type {ctype_class}'>"
-                        f"{ctype}"
-                        f"</span></li>"
+                        f"</li>"
                     )
                 desc += '</ul>'
             else:
