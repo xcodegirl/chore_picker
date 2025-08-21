@@ -27,48 +27,6 @@ schedule = defaultdict(lambda: defaultdict(dict))
 
 start_idx = random.randrange(0,4)
 for week in range(1, weeks + 1):
-    day_idx = 0
-    for day in days:
-        person_idx = start_idx
-        if (day != "Friday") and (day != "Saturday") and (day != "Sunday"):
-            chore_idx = 0
-            for chore in other_daily_chores:
-                if (day_idx % 2 == chore_idx % 2):                 
-                    person = people[person_idx % len(people)]
-                    schedule[f'Week {week}'][day].setdefault(person, []).append(chore)
-                    person_idx += 1
-                chore_idx += 1
-        start_idx += 1
-        day_idx += 1
-
-start_idx = random.randrange(0,4)
-for week in range(1, weeks + 1):
-    person_idx = start_idx
-    # Assign fixed-day weekly chores in round-robin
-    for chore in fixed_day_chores:
-        day = chore['dayofweek']
-        person = people[person_idx % len(people)]
-        schedule[f'Week {week}'][day].setdefault(person, []).append(chore)
-        person_idx += 1
-    start_idx += 1
-
-week_idx = 0
-start_idx = random.randrange(0,4)
-for week in range(1, weeks + 1):
-    person_idx = start_idx
-    day = "Sunday"
-    chore_idx = 0
-    for chore in other_weekly_chores:
-        if (week_idx % 2 == chore_idx % 2):                 
-            person = people[person_idx % len(people)]
-            schedule[f'Week {week}'][day].setdefault(person, []).append(chore)
-            person_idx += 1
-        chore_idx += 1
-    start_idx += 1
-    week_idx += 1
-
-start_idx = random.randrange(0,4)
-for week in range(1, weeks + 1):
     # Assign required daily in round-robin
     for day in days:
         person_idx = start_idx
@@ -77,6 +35,42 @@ for week in range(1, weeks + 1):
             schedule[f'Week {week}'][day].setdefault(person, []).append(chore)
             person_idx += 1
         start_idx += 1
+
+start_idx = random.randrange(0,4)
+extra_idx = random.randrange(0,4)
+done_extra = False
+chore_idx = 0
+for week in range(1, weeks + 1):
+    day_idx = 0
+    person_idx = start_idx
+    for day in days:
+        if (day != "Sunday"):
+            for i in range(0,len(people)):
+                person = people[person_idx % len(people)]
+                if (len(schedule[f'Week {week}'][day].get(person, [])) == 0):                 
+                    chore = other_daily_chores[chore_idx % len(other_daily_chores)]
+                    chore_idx += 1
+                    schedule[f'Week {week}'][day].setdefault(person, []).append(chore)
+                person_idx += 1                
+        day_idx += 1
+    start_idx += 1
+
+week_idx = 0
+chore_idx = 0
+start_idx = random.randrange(0,4)
+for week in range(1, weeks + 1):
+    person_idx = start_idx
+    day = "Sunday"
+    for i in range(0,len(people)):
+        person = people[person_idx % len(people)]
+        if (len(schedule[f'Week {week}'][day].get(person, [])) == 0):                 
+            chore = other_weekly_chores[chore_idx % len(other_weekly_chores)] 
+            chore_idx += 1
+            schedule[f'Week {week}'][day].setdefault(person, []).append(chore)
+        person_idx += 1
+    start_idx += 1
+    week_idx += 1
+
 
 # Save to file
 with open('chore_schedule.json', 'w') as f:

@@ -21,7 +21,7 @@ with open('chore_summary.json', 'r') as f:
 # Always use hardcoded people list
 people = ['Archimedes', 'Ricardo', 'Curia', 'Joanne', 'Hypatia']
 
-start_day = datetime.datetime.now()
+start_day = datetime.datetime(2025, 8, 18)
 
 # Build lookup for required chores and type
 chore_type = {}
@@ -77,7 +77,7 @@ for week, week_data in schedule.items():
                     if chore['chore'] in required_daily or chore['chore'] in required_weekly or chore['chore'] in required_monthly:
                         req = ' <span class="required">(*)</span>'
                     desc += (
-                        f"<li><b>{chore['chore']}</b>{req}<br>"
+                        f"<li><b>{chore['chore']}</b><br>"
                         f"</li>"
                     )
                 desc += '</ul>'
